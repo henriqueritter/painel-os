@@ -1,7 +1,11 @@
-import React from "react";
+import React, { useEffect } from "react";
 import "./styles/global.css";
 
 function App() {
+  // useEffect(() => {
+  //   const elem = document.getElementById("BOR");
+  //   elem.scrollTop = elem?.scrollHeight;
+  // }, []);
   return (
     <div className="App">
       {/* div container = flex column */}
@@ -14,7 +18,49 @@ function App() {
           <div className="container-content">
             <div className="container-orders" id="BOR">
               <p>Setor Ordem</p>
-              <span>Nº OS Prefix Time Description</span>
+              <div className="orders">
+                <span>Nº OS Prefix Time Description</span>
+                <br />
+                <span>Nº OS Prefix Time Description</span>
+                <br />
+                <span>Nº OS Prefix Time Description</span>
+                <br />
+                <span>Nº OS Prefix Time Description</span>
+                <br />
+                <span>Nº OS Prefix Time Description</span>
+                <br />
+                <span>Nº OS Prefix Time Description</span>
+                <br />
+                <span>Nº OS Prefix Time Description</span>
+                <br />
+                <span>Nº OS Prefix Time Description</span>
+                <br />
+                <span>Nº OS Prefix Time Description</span>
+                <br />
+                <span>Nº OS Prefix Time Description</span>
+                <br />
+                <span>Nº OS Prefix Time Description</span>
+                <br />
+                <span>Nº OS Prefix Time Description</span>
+                <br />
+                <span>Nº OS Prefix Time Description</span>
+                <br />
+                <span>Nº OS Prefix Time Description</span>
+                <br />
+                <span>Nº OS Prefix Time Description</span>
+                <br />
+                <span>Nº OS Prefix Time Description</span>
+                <br />
+                <span>Nº OS Prefix Time Description</span>
+                <br />
+                <span>Nº OS Prefix Time Description</span>
+                <br />
+                <span>Nº OS Prefix Time Description</span>
+                <br />
+                <span>Nº OS Prefix Time Description</span>
+                <br />
+                <span>Nº OS Prefix Time Description</span>
+              </div>
             </div>
             <div className="container-orders" id="ELE">
               <p>Setor Ordem</p>

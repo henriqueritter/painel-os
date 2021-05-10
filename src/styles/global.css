@@ -25,6 +25,7 @@ body {
   text-align: center;
   font-weight: 700;
   font-size: 28px;
+  margin-bottom: 1%;
 }
 
 .container-groups {
@@ -53,9 +54,18 @@ p {
   font-weight: 700;
 }
 
+.orders {
+  height: 300px;
+  overflow: hidden;
+
+  scroll-behavior: smooth;
+}
+
 /* CSS Order group color */
 #BOR {
   background: #e1da25;
+  max-height: 100%;
+  /* padding: 3px; */
 }
 #ELE {
   background: #2ecd34;
@@ -73,6 +83,6 @@ p {
   background: #d259f0;
 }
 #RET {
-  margin-top: 1%;
+  margin-top: 2%;
   background: #fff;
 }
