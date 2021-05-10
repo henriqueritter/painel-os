@@ -2,8 +2,77 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: "Roboto Slab", serif;
+  width: 1280;
+  height: 768;
 }
 
 body {
+  color: #000;
   background: #adadad;
+}
+
+.container {
+  display: flex;
+  justify-content: space-around;
+  /* justify-self: center;
+  align-content: center; */
+  width: 100%;
+  height: 100%;
+}
+/* header */
+.container-header {
+  text-align: center;
+  font-weight: 700;
+  font-size: 28px;
+}
+
+.container-groups {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  text-align: center;
+  width: 100%;
+  margin: 1%;
+}
+
+.container-content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+  grid-auto-columns: 100px;
+  /* margin: 1%; */
+  height: 100%;
+  /* height: 160px; */
+}
+
+p {
+  font-weight: 500;
+  font-size: 16px;
+  font-weight: 700;
+}
+
+/* CSS Order group color */
+#BOR {
+  background: #e1da25;
+}
+#ELE {
+  background: #2ecd34;
+}
+#FUN {
+  background: #ee991a;
+}
+#LUB {
+  background: #1aeebb;
+}
+#MEC {
+  background: #ee3107;
+}
+#TAP {
+  background: #d259f0;
+}
+#RET {
+  margin-top: 1%;
+  background: #fff;
 }
