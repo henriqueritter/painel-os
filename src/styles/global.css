@@ -51,18 +51,6 @@ body {
   max-height: 46em;
 }
 
-p {
-  font-weight: bold;
-  font-size: 16px;
-}
-
-ul {
-  font-weight: 400;
-  font-size: 12px;
-  text-align: left;
-  margin-left: 0.5em;
-  margin-top: 0.5em;
-}
 .container-orders {
   box-shadow: 0.0314em 0.0314em;
 
@@ -75,6 +63,42 @@ ul {
   overflow: hidden;
 
   scroll-behavior: smooth;
+}
+
+.container-orders-footer {
+  min-height: 10em;
+  max-height: 20em;
+  box-shadow: 0.0314em 0.0314em;
+  border-radius: 1em;
+}
+
+p {
+  font-weight: bold;
+  font-size: 16px;
+  margin-top: 0.3em;
+}
+
+ul {
+  font-weight: 400;
+  font-size: 12px;
+  text-align: left;
+  margin-left: 1em;
+  margin-top: 0.5em;
+}
+
+/* SPANs OS */
+.span-os {
+  font-weight: bold;
+}
+
+.span-prefixo {
+  margin-left: 0.5em;
+}
+.span-dt_aber {
+  margin-left: 0.5em;
+}
+.span-defeito {
+  margin-left: 1em;
 }
 
 /* CSS Order group color */
