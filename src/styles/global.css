@@ -60,7 +60,7 @@ body {
 .orders {
   height: 12rem;
 
-  overflow: hidden;
+  overflow: auto;
 
   /* overscroll-behavior-y: contain;
   scroll-snap-type: proximity;

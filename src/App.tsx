@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import "./styles/global.css";
+import { v4 as uuid } from "uuid";
 
 interface IOrders {
   SETOR: string;
@@ -130,7 +131,7 @@ function App() {
               <div className="orders">
                 {borr.map((item) => {
                   return (
-                    <ul key={item.OS}>
+                    <ul key={uuid() + item.OS}>
                       <span className="span-os">{item.OS}</span>
                       <span className="span-prefixo">{item.PREFIXO}</span>
                       <span className="span-dt_aber">{item.DT_ABER}</span>
@@ -142,10 +143,10 @@ function App() {
             </div>
             <div className="container-orders" id="ELE">
               <p>Elétrica - Qtd: {elet.length}</p>
-              <div className="orders">
+              <div className="orders" id="TEST">
                 {elet.map((item) => {
                   return (
-                    <ul key={item.OS}>
+                    <ul key={uuid() + item.OS}>
                       <span className="span-os">{item.OS}</span>
                       <span className="span-prefixo">{item.PREFIXO}</span>
                       <span className="span-dt_aber">{item.DT_ABER}</span>
@@ -160,7 +161,7 @@ function App() {
               <div className="orders">
                 {fupi.map((item) => {
                   return (
-                    <ul key={item.OS}>
+                    <ul key={uuid() + item.OS}>
                       <span className="span-os">{item.OS}</span>
                       <span className="span-prefixo">{item.PREFIXO}</span>
                       <span className="span-dt_aber">{item.DT_ABER}</span>
@@ -175,7 +176,7 @@ function App() {
               <div className="orders">
                 {lubr.map((item) => {
                   return (
-                    <ul key={item.OS}>
+                    <ul key={uuid() + item.OS}>
                       <span className="span-os">{item.OS}</span>
                       <span className="span-prefixo">{item.PREFIXO}</span>
                       <span className="span-dt_aber">{item.DT_ABER}</span>
@@ -190,7 +191,7 @@ function App() {
               <div className="orders">
                 {meca.map((item) => {
                   return (
-                    <ul key={item.OS}>
+                    <ul key={uuid() + item.OS}>
                       <span className="span-os">{item.OS}</span>
                       <span className="span-prefixo">{item.PREFIXO}</span>
                       <span className="span-dt_aber">{item.DT_ABER}</span>
@@ -205,7 +206,7 @@ function App() {
               <div className="orders">
                 {tapo.map((item) => {
                   return (
-                    <ul key={item.OS}>
+                    <ul key={uuid() + item.OS}>
                       <span className="span-os">{item.OS}</span>
                       <span className="span-prefixo">{item.PREFIXO}</span>
                       <span className="span-dt_aber">{item.DT_ABER}</span>
@@ -221,7 +222,7 @@ function App() {
             <div className="orders">
               {ret.map((item) => {
                 return (
-                  <ul key={item.OS}>
+                  <ul key={"RET" + item.OS}>
                     <span className="span-os">{item.OS}</span>
                     <span className="span-prefixo">{item.PREFIXO}</span>
                     <span className="span-dt_aber">{item.DT_ABER}</span>
@@ -241,7 +242,7 @@ function App() {
               <div className="orders">
                 {borr.map((item) => {
                   return (
-                    <ul key={item.OS}>
+                    <ul key={uuid() + item.OS}>
                       <span className="span-os">{item.OS}</span>
                       <span className="span-prefixo">{item.PREFIXO}</span>
                       <span className="span-dt_aber">{item.DT_ABER}</span>
@@ -256,7 +257,7 @@ function App() {
               <div className="orders">
                 {borr.map((item) => {
                   return (
-                    <ul key={item.OS}>
+                    <ul key={uuid() + item.OS}>
                       <span className="span-os">{item.OS}</span>
                       <span className="span-prefixo">{item.PREFIXO}</span>
                       <span className="span-dt_aber">{item.DT_ABER}</span>
@@ -271,7 +272,7 @@ function App() {
               <div className="orders">
                 {borr.map((item) => {
                   return (
-                    <ul key={item.OS}>
+                    <ul key={uuid() + item.OS}>
                       <span className="span-os">{item.OS}</span>
                       <span className="span-prefixo">{item.PREFIXO}</span>
                       <span className="span-dt_aber">{item.DT_ABER}</span>
@@ -286,7 +287,7 @@ function App() {
               <div className="orders">
                 {borr.map((item) => {
                   return (
-                    <ul key={item.OS}>
+                    <ul key={uuid() + item.OS}>
                       <span className="span-os">{item.OS}</span>
                       <span className="span-prefixo">{item.PREFIXO}</span>
                       <span className="span-dt_aber">{item.DT_ABER}</span>
@@ -301,7 +302,7 @@ function App() {
               <div className="orders">
                 {borr.map((item) => {
                   return (
-                    <ul key={item.OS}>
+                    <ul key={uuid() + item.OS}>
                       <span className="span-os">{item.OS}</span>
                       <span className="span-prefixo">{item.PREFIXO}</span>
                       <span className="span-dt_aber">{item.DT_ABER}</span>
@@ -316,7 +317,7 @@ function App() {
               <div className="orders">
                 {borr.map((item) => {
                   return (
-                    <ul key={item.OS}>
+                    <ul key={uuid() + item.OS}>
                       <span className="span-os">{item.OS}</span>
                       <span className="span-prefixo">{item.PREFIXO}</span>
                       <span className="span-dt_aber">{item.DT_ABER}</span>
@@ -332,7 +333,7 @@ function App() {
             <div className="orders">
               {borr.map((item) => {
                 return (
-                  <ul key={item.OS}>
+                  <ul key={uuid() + item.OS}>
                     <span className="span-os">{item.OS}</span>
                     <span className="span-prefixo">{item.PREFIXO}</span>
                     <span className="span-dt_aber">{item.DT_ABER}</span>
