@@ -62,7 +62,12 @@ body {
 
   overflow: hidden;
 
+  /* overscroll-behavior-y: contain;
+  scroll-snap-type: proximity;
+
   scroll-behavior: smooth;
+
+  scroll-snap-align: end; */
 }
 
 .container-orders-footer {

@@ -41,6 +41,16 @@ function App() {
   const [ret, setRet] = useState<IOrders[]>([]);
   const [tapo, setTapo] = useState<IOrders[]>([]);
 
+  // @ts-ignore
+  // window.scrollTo(0, document.querySelector(".orders").scrollHeight);
+
+  // @ts-ignore
+  // function updateScroll() {
+  //   const scrollDiv = document.getElementsByClassName("orders");
+  //   // @ts-expect-error
+  //   scrollDiv.scrollTop = scrollDiv.scrollHeight;
+  // }
+
   // receive data
   const getData = () => {
     fetch("BORR.JSON", {})
