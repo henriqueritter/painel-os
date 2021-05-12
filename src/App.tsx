@@ -46,19 +46,28 @@ function App() {
   // window.scrollTo(0, document.querySelector(".orders").scrollHeight);
 
   function updateScroll() {
-    // use a for each no getElements e em cada um aplica a regra
-    // @ts-ignore
-    const scrollDiv: HTMLDivElement = document.getElementById("TEST");
+    // get all orders div
+    const divs = document.getElementsByClassName("orders");
 
-    // console.log(scrollDiv.scrollTop);
-    let top = scrollDiv.scrollTop;
-    let height = scrollDiv.scrollHeight;
-
-    if (scrollDiv.scrollTop < scrollDiv.scrollHeight) {
-      scrollDiv.scrollTop = scrollDiv.scrollTop + 5;
+    //apply a JS Rule for each div
+    for (let i = 0; i < divs.length; i++) {
+      if (divs[i].scrollTop < divs[i].scrollHeight) {
+        divs[i].scrollTop = divs[i].scrollTop + 5;
+      }
     }
 
-    console.log(top, height);
+    // //@ts-ignore
+    // const scrollDiv: HTMLDivElement = document.getElementById("TEST");
+
+    // if (scrollDiv.scrollTop < scrollDiv.scrollHeight) {
+    //   scrollDiv.scrollTop = scrollDiv.scrollTop + 5;
+    // }
+
+    // if (scrollDiv.scrollTop >= scrollDiv.scrollHeight - 5) {
+    //   console.log("end");
+    // }
+
+    // console.log(top, height);
     // scrollDiv.scrollTop = scrollDiv.scrollHeight;
   }
 

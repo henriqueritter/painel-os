@@ -60,7 +60,7 @@ body {
 .orders {
   height: 12rem;
 
-  overflow: auto;
+  overflow: hidden;
   scroll-behavior: smooth;
 
   /* overscroll-behavior-y: contain;
