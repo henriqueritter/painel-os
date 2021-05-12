@@ -10,28 +10,10 @@ interface IOrders {
   DEFEITOS?: string;
 }
 
-//BACKUP GETDATA
-// const getData = () => {
-//   fetch("BORR.JSON", {
-//     headers: {
-//       "Content-Type": "application/json",
-//       Accept: "application/json",
-//     },
-//   })
-//     .then(function (response) {
-//       console.log(response);
-//       return response.json();
-//     })
-//     .then(function (myJson) {
-//       // console.log(myJson);
-//       setBorr(myJson);
-//     });
-//   console.log(borr[1]);
-// };
-
-// useEffect(() => {
-//   getData();
-// }, []);
+interface IJsonList {
+  sector: string;
+  jsonFileName: string;
+}
 
 function App() {
   const [borr, setBorr] = useState<IOrders[]>([]);
@@ -42,106 +24,99 @@ function App() {
   const [ret, setRet] = useState<IOrders[]>([]);
   const [tapo, setTapo] = useState<IOrders[]>([]);
 
-  // @ts-ignore
-  // window.scrollTo(0, document.querySelector(".orders").scrollHeight);
+  // const [data, setData] = useState<{}>({});
 
-  function updateScroll() {
-    // get all orders div
-    const divs = document.getElementsByClassName("orders");
-
-    //apply a JS Rule for each div
-    for (let i = 0; i < divs.length; i++) {
-      if (divs[i].scrollTop < divs[i].scrollHeight) {
-        divs[i].scrollTop = divs[i].scrollTop + 5;
-      }
-    }
-
-    // //@ts-ignore
-    // const scrollDiv: HTMLDivElement = document.getElementById("TEST");
-
-    // if (scrollDiv.scrollTop < scrollDiv.scrollHeight) {
-    //   scrollDiv.scrollTop = scrollDiv.scrollTop + 5;
-    // }
-
-    // if (scrollDiv.scrollTop >= scrollDiv.scrollHeight - 5) {
-    //   console.log("end");
-    // }
-
-    // console.log(top, height);
-    // scrollDiv.scrollTop = scrollDiv.scrollHeight;
-  }
-
-  // receive data
-  // Todo an array of objects with Json name File and setState Name on each object
-  // apply a for each on the array to execute for the fetch
-  const getData = () => {
-    fetch("BORR.JSON", {})
+  // set each Json file data to a state const.
+  const getDataFilesArray = () => {
+    fetch("LIST.json", {})
       .then(function (response) {
         return response.json();
       })
-      .then(function (myJson) {
-        // console.log(myJson);
-        setBorr(myJson);
-      });
+      .then(function (jsonFile: IJsonList[]) {
+        for (let i = 0; i < jsonFile.length; i++) {
+          fetch(jsonFile[i].jsonFileName, {})
+            .then(function (response) {
+              return response.json();
+            })
+            .then(function (par) {
+              switch (jsonFile[i].sector) {
+                case "BORR":
+                  setBorr(par);
+                  break;
+                case "ELET":
+                  setElet(par);
+                  break;
+                case "FUPI":
+                  setFupi(par);
+                  break;
+                case "LUBR":
+                  setLubr(par);
+                  break;
+                case "MECA":
+                  setMeca(par);
+                  break;
+                case "TAPO":
+                  setTapo(par);
+                  break;
+                case "RET":
+                  setRet(par);
+                  break;
 
-    fetch("ELET.JSON", {})
-      .then(function (response) {
-        return response.json();
-      })
-      .then(function (myJson) {
-        setElet(myJson);
-      });
-
-    fetch("FUPI.JSON", {})
-      .then(function (response) {
-        return response.json();
-      })
-      .then(function (myJson) {
-        setFupi(myJson);
-      });
-
-    fetch("LUBR.JSON", {})
-      .then(function (response) {
-        return response.json();
-      })
-      .then(function (myJson) {
-        setLubr(myJson);
-      });
-
-    fetch("MECA.JSON", {})
-      .then(function (response) {
-        return response.json();
-      })
-      .then(function (myJson) {
-        setMeca(myJson);
-      });
-
-    fetch("RET.JSON", {})
-      .then(function (response) {
-        return response.json();
-      })
-      .then(function (myJson) {
-        setRet(myJson);
-      });
-
-    fetch("TAPO.JSON", {})
-      .then(function (response) {
-        return response.json();
-      })
-      .then(function (myJson) {
-        setTapo(myJson);
+                default:
+                  console.log("Error on JSON file name");
+              }
+            });
+        }
       });
   };
 
   useEffect(() => {
-    getData();
+    getDataFilesArray();
   }, []);
 
   useEffect(() => {
     setInterval(() => {
-      updateScroll();
-    }, 1000);
-  }, []);
+      scrollOrdersList();
+    }, 2000);
+  }, [, elet]);
+
+  const scrollOrdersList = function () {
+    //if div has more than 10 elements
+    // if (borr.length >= 10) {
+    //   // insert the first element at the final of the array
+    //   setBorr((borr) => [...borr, borr[0]]);
+    //   // remove the first item of the array
+    //   setBorr((borr) => borr.slice(1));
+    // }
+
+    if (elet.length >= 10) {
+      const newElet = [...elet, elet[0]];
+
+      // setElet((elet) => [...elet, elet[0]]);
+      setElet(newElet.slice(1));
+    }
+
+    // if (fupi.length >= 10) {
+    //   setFupi((fupi) => [...fupi, fupi[0]]);
+    //   setFupi((fupi) => fupi.slice(1));
+    // }
+    // if (lubr.length >= 10) {
+    //   setLubr((lubr) => [...lubr, lubr[0]]);
+    //   setLubr((lubr) => lubr.slice(1));
+    // }
+    // if (meca.length >= 10) {
+    //   setMeca((meca) => [...meca, meca[0]]);
+    //   setMeca((meca) => meca.slice(1));
+    // }
+    // if (tapo.length >= 10) {
+    //   setTapo((tapo) => [...tapo, tapo[0]]);
+    //   setTapo((tapo) => tapo.slice(1));
+    // }
+    // if (ret.length >= 10) {
+    //   setRet((ret) => [...ret, ret[0]]);
+    //   setRet((ret) => ret.slice(1));
+    // }
+  };
 
   return (
     <div className="App">
@@ -158,7 +133,7 @@ function App() {
               <div className="orders">
                 {borr.map((item) => {
                   return (
-                    <ul key={uuid() + item.OS}>
+                    <ul key={uuid()}>
                       <span className="span-os">{item.OS}</span>
                       <span className="span-prefixo">{item.PREFIXO}</span>
                       <span className="span-dt_aber">{item.DT_ABER}</span>
@@ -173,7 +148,7 @@ function App() {
               <div className="orders" id="TEST">
                 {elet.map((item) => {
                   return (
-                    <ul key={uuid() + item.OS}>
+                    <ul key={uuid()}>
                       <span className="span-os">{item.OS}</span>
                       <span className="span-prefixo">{item.PREFIXO}</span>
                       <span className="span-dt_aber">{item.DT_ABER}</span>
@@ -188,7 +163,7 @@ function App() {
               <div className="orders">
                 {fupi.map((item) => {
                   return (
-                    <ul key={uuid() + item.OS}>
+                    <ul key={uuid()}>
                       <span className="span-os">{item.OS}</span>
                       <span className="span-prefixo">{item.PREFIXO}</span>
                       <span className="span-dt_aber">{item.DT_ABER}</span>
@@ -203,7 +178,7 @@ function App() {
               <div className="orders">
                 {lubr.map((item) => {
                   return (
-                    <ul key={uuid() + item.OS}>
+                    <ul key={uuid()}>
                       <span className="span-os">{item.OS}</span>
                       <span className="span-prefixo">{item.PREFIXO}</span>
                       <span className="span-dt_aber">{item.DT_ABER}</span>
@@ -218,7 +193,7 @@ function App() {
               <div className="orders">
                 {meca.map((item) => {
                   return (
-                    <ul key={uuid() + item.OS}>
+                    <ul key={uuid()}>
                       <span className="span-os">{item.OS}</span>
                       <span className="span-prefixo">{item.PREFIXO}</span>
                       <span className="span-dt_aber">{item.DT_ABER}</span>
@@ -233,7 +208,7 @@ function App() {
               <div className="orders">
                 {tapo.map((item) => {
                   return (
-                    <ul key={uuid() + item.OS}>
+                    <ul key={uuid()}>
                       <span className="span-os">{item.OS}</span>
                       <span className="span-prefixo">{item.PREFIXO}</span>
                       <span className="span-dt_aber">{item.DT_ABER}</span>
@@ -249,7 +224,7 @@ function App() {
             <div className="orders">
               {ret.map((item) => {
                 return (
-                  <ul key={"RET" + item.OS}>
+                  <ul key={uuid()}>
                     <span className="span-os">{item.OS}</span>
                     <span className="span-prefixo">{item.PREFIXO}</span>
                     <span className="span-dt_aber">{item.DT_ABER}</span>
@@ -269,7 +244,7 @@ function App() {
               <div className="orders">
                 {borr.map((item) => {
                   return (
-                    <ul key={uuid() + item.OS}>
+                    <ul key={uuid()}>
                       <span className="span-os">{item.OS}</span>
                       <span className="span-prefixo">{item.PREFIXO}</span>
                       <span className="span-dt_aber">{item.DT_ABER}</span>
@@ -284,7 +259,7 @@ function App() {
               <div className="orders">
                 {borr.map((item) => {
                   return (
-                    <ul key={uuid() + item.OS}>
+                    <ul key={uuid()}>
                       <span className="span-os">{item.OS}</span>
                       <span className="span-prefixo">{item.PREFIXO}</span>
                       <span className="span-dt_aber">{item.DT_ABER}</span>
@@ -299,7 +274,7 @@ function App() {
               <div className="orders">
                 {borr.map((item) => {
                   return (
-                    <ul key={uuid() + item.OS}>
+                    <ul key={uuid()}>
                       <span className="span-os">{item.OS}</span>
                       <span className="span-prefixo">{item.PREFIXO}</span>
                       <span className="span-dt_aber">{item.DT_ABER}</span>
@@ -314,7 +289,7 @@ function App() {
               <div className="orders">
                 {borr.map((item) => {
                   return (
-                    <ul key={uuid() + item.OS}>
+                    <ul key={uuid()}>
                       <span className="span-os">{item.OS}</span>
                       <span className="span-prefixo">{item.PREFIXO}</span>
                       <span className="span-dt_aber">{item.DT_ABER}</span>
@@ -329,7 +304,7 @@ function App() {
               <div className="orders">
                 {borr.map((item) => {
                   return (
-                    <ul key={uuid() + item.OS}>
+                    <ul key={uuid()}>
                       <span className="span-os">{item.OS}</span>
                       <span className="span-prefixo">{item.PREFIXO}</span>
                       <span className="span-dt_aber">{item.DT_ABER}</span>
@@ -344,7 +319,7 @@ function App() {
               <div className="orders">
                 {borr.map((item) => {
                   return (
-                    <ul key={uuid() + item.OS}>
+                    <ul key={uuid()}>
                       <span className="span-os">{item.OS}</span>
                       <span className="span-prefixo">{item.PREFIXO}</span>
                       <span className="span-dt_aber">{item.DT_ABER}</span>
@@ -360,7 +335,7 @@ function App() {
             <div className="orders">
               {borr.map((item) => {
                 return (
-                  <ul key={uuid() + item.OS}>
+                  <ul key={uuid()}>
                     <span className="span-os">{item.OS}</span>
                     <span className="span-prefixo">{item.PREFIXO}</span>
                     <span className="span-dt_aber">{item.DT_ABER}</span>

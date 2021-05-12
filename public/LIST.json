@@ -1,0 +1,31 @@
+[
+  {
+    "sector": "BORR",
+    "jsonFileName": "BORR.JSON"
+  },
+
+  {
+    "sector": "ELET",
+    "jsonFileName": "ELET.JSON"
+  },
+  {
+    "sector": "FUPI",
+    "jsonFileName": "FUPI.JSON"
+  },
+  {
+    "sector": "LUBR",
+    "jsonFileName": "LUBR.JSON"
+  },
+  {
+    "sector": "MECA",
+    "jsonFileName": "MECA.JSON"
+  },
+  {
+    "sector": "TAPO",
+    "jsonFileName": "TAPO.JSON"
+  },
+  {
+    "sector": "RET",
+    "jsonFileName": "RET.JSON"
+  }
+]
