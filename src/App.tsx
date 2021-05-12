@@ -45,14 +45,26 @@ function App() {
   // @ts-ignore
   // window.scrollTo(0, document.querySelector(".orders").scrollHeight);
 
-  // @ts-ignore
-  // function updateScroll() {
-  //   const scrollDiv = document.getElementsByClassName("orders");
-  //   // @ts-expect-error
-  //   scrollDiv.scrollTop = scrollDiv.scrollHeight;
-  // }
+  function updateScroll() {
+    // use a for each no getElements e em cada um aplica a regra
+    // @ts-ignore
+    const scrollDiv: HTMLDivElement = document.getElementById("TEST");
+
+    // console.log(scrollDiv.scrollTop);
+    let top = scrollDiv.scrollTop;
+    let height = scrollDiv.scrollHeight;
+
+    if (scrollDiv.scrollTop < scrollDiv.scrollHeight) {
+      scrollDiv.scrollTop = scrollDiv.scrollTop + 5;
+    }
+
+    console.log(top, height);
+    // scrollDiv.scrollTop = scrollDiv.scrollHeight;
+  }
 
   // receive data
+  // Todo an array of objects with Json name File and setState Name on each object
+  // apply a for each on the array to execute for the fetch
   const getData = () => {
     fetch("BORR.JSON", {})
       .then(function (response) {
@@ -114,6 +126,12 @@ function App() {
 
   useEffect(() => {
     getData();
+  }, []);
+
+  useEffect(() => {
+    setInterval(() => {
+      updateScroll();
+    }, 1000);
   }, []);
 
   return (

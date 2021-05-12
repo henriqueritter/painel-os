@@ -1,18 +1,37 @@
 [
+
   {
+
     "SETOR": "FUNIL/PINT",
-    "OS": 2656,
+
+    "OS": 2655,
+
     "PREFIXO": "1104",
+
     "DT_ABER": "11/Abr 01:22",
+
     "DEFEITOS": "TAMPA PORTA MALAS",
+
     "QTD": 15
+
   },
+
   {
+
     "SETOR": "FUNIL/PINT",
-    "OS": 2660,
+
+    "OS": 26601,
+
     "PREFIXO": "1104",
+
     "DT_ABER": "11/Abr 06:12",
-    "DEFEITOS": "SOLDAR",
-    "QTD": 15
+
+    "DEFEITOS": "SOLDAR A TAMPA",
+
+    "QTD": 12
+
   }
+
+
 ]
+

@@ -61,6 +61,7 @@ body {
   height: 12rem;
 
   overflow: auto;
+  scroll-behavior: smooth;
 
   /* overscroll-behavior-y: contain;
   scroll-snap-type: proximity;
