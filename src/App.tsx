@@ -24,8 +24,6 @@ function App() {
   const [ret, setRet] = useState<IOrders[]>([]);
   const [tapo, setTapo] = useState<IOrders[]>([]);
 
-  // const [data, setData] = useState<{}>({});
-
   // set each Json file data to a state const.
   const getDataFilesArray = () => {
     fetch("LIST.json", {})
