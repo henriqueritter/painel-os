@@ -3,16 +3,6 @@ import "./styles/global.css";
 import { v4 as uuid } from "uuid";
 
 interface IOrders {
-  borr: IOrdersList[];
-  elet: IOrdersList[];
-  fupi: IOrdersList[];
-  lubr: IOrdersList[];
-  meca: IOrdersList[];
-  ret: IOrdersList[];
-  tapo: IOrdersList[];
-}
-
-interface IOrdersList {
   SETOR: string;
   OS: number;
   PREFIXO: string;
@@ -20,69 +10,75 @@ interface IOrdersList {
   DEFEITOS?: string;
 }
 
+interface IJsonList {
+  sector: string;
+  jsonFileName: string;
+}
+
 function App() {
-  // store orders
-  const [ordersList, setOrdersList] = useState<IOrders>({
-    borr: [],
-    elet: [],
-    fupi: [],
-    lubr: [],
-    meca: [],
-    ret: [],
-    tapo: [],
-  });
+  const [borr, setBorr] = useState<IOrders[]>([]);
+  const [elet, setElet] = useState<IOrders[]>([]);
+  const [fupi, setFupi] = useState<IOrders[]>([]);
+  const [lubr, setLubr] = useState<IOrders[]>([]);
+  const [meca, setMeca] = useState<IOrders[]>([]);
+  const [ret, setRet] = useState<IOrders[]>([]);
+  const [tapo, setTapo] = useState<IOrders[]>([]);
 
+  const [orders, setOrders] = useState<{}>({});
   // set each Json file data to a state const.
-  const getDataFilesArray = async () => {
-    // fetch all JSON Files to create a object orders
-    const borr: IOrdersList[] = await fetch("BORR.JSON", {}).then(function (
-      response
-    ) {
-      return response.json();
-    });
-    const elet: IOrdersList[] = await fetch("ELET.JSON", {}).then(function (
-      response
-    ) {
-      return response.json();
-    });
-    const fupi: IOrdersList[] = await fetch("FUPI.JSON", {}).then(function (
-      response
-    ) {
-      return response.json();
-    });
-    const lubr: IOrdersList[] = await fetch("LUBR.JSON", {}).then(function (
-      response
-    ) {
-      return response.json();
-    });
-    const meca: IOrdersList[] = await fetch("MECA.JSON", {}).then(function (
-      response
-    ) {
-      return response.json();
-    });
-    const ret: IOrdersList[] = await fetch("RET.JSON", {}).then(function (
-      response
-    ) {
-      return response.json();
-    });
-    const tapo: IOrdersList[] = await fetch("TAPO.JSON", {}).then(function (
-      response
-    ) {
-      return response.json();
-    });
-
-    //object orders, used to set a state
-    const orders = {
-      borr,
-      elet,
-      fupi,
-      lubr,
-      meca,
-      ret,
-      tapo,
-    };
-    console.log(orders);
-    setOrdersList(orders);
+  const getDataFilesArray = () => {
+    fetch("LIST.json", {})
+      .then(function (response) {
+        return response.json();
+      })
+      .then(function (jsonFile: IJsonList[]) {
+        for (let i = 0; i < jsonFile.length; i++) {
+          fetch(jsonFile[i].jsonFileName, {})
+            .then(function (response) {
+              return response.json();
+            })
+            .then(function (par) {
+              let bor, ele, fup, lub, mec, tap;
+              switch (jsonFile[i].sector) {
+                case "BORR":
+                  setBorr(par);
+                  bor = par;
+                  break;
+                case "ELET":
+                  setElet(par);
+                  ele = par;
+                  break;
+                case "FUPI":
+                  setFupi(par);
+                  fup = par;
+                  break;
+                case "LUBR":
+                  setLubr(par);
+                  lub = par;
+                  break;
+                case "MECA":
+                  setMeca(par);
+                  mec = par;
+                  break;
+                case "TAPO":
+                  setTapo(par);
+                  tap = par;
+                  break;
+                case "RET":
+                  setRet(par);
+                  break;
+                default:
+                  console.log("Error on JSON file name");
+              }
+              const order = {
+                bor: bor,
+                ele: ele,
+                fup: fup,
+              };
+              setOrders(order);
+            });
+        }
+      });
   };
 
   useEffect(() => {
@@ -91,12 +87,66 @@ function App() {
 
   // useEffect(() => {
   //   setInterval(() => {
-  //     if (ordersList.elet.length >= 5) {
+  //     if (borr.length >= 5) {
+  //       setBorr((borr) => [...borr.slice(1), borr[0]]);
+  //       console.log("borr");
+  //     }
+  //   }, 3000);
+  // }, [borr.length]);
+
+  // useEffect(() => {
+  //   setInterval(() => {
+  //     if (elet.length >= 5) {
   //       setElet((elet) => [...elet.slice(1), elet[0]]);
   //       console.log("elet");
   //     }
   //   }, 3000);
   // }, [elet.length]);
+
+  useEffect(() => {
+    setInterval(() => {
+      // setBorr((borr) => [...borr.slice(1), borr[0]]);
+      // scrollOrdersList();
+      setElet((elet) => [...elet.slice(1), elet[0]]);
+      // console.log(orders);
+    }, 3000);
+  }, []);
+
+  const scrollOrdersList = function () {
+    //if div has more than 10 elements
+    if (borr.length >= 5) {
+      setBorr((borr) => [...borr, borr[0]]);
+      console.log("borr");
+    }
+
+    // if (elet.length >= 10) {
+    //   // const newElet = [...elet, elet[0]];
+
+    //   setElet((elet) => [...elet, elet[0]]);
+    //   // setElet(newElet.slice(1));
+    // }
+
+    // if (fupi.length >= 10) {
+    //   setFupi((fupi) => [...fupi, fupi[0]]);
+    //   setFupi((fupi) => fupi.slice(1));
+    // }
+    // if (lubr.length >= 10) {
+    //   setLubr((lubr) => [...lubr, lubr[0]]);
+    //   setLubr((lubr) => lubr.slice(1));
+    // }
+    // if (meca.length >= 10) {
+    //   setMeca((meca) => [...meca, meca[0]]);
+    //   setMeca((meca) => meca.slice(1));
+    // }
+    // if (tapo.length >= 10) {
+    //   setTapo((tapo) => [...tapo, tapo[0]]);
+    //   setTapo((tapo) => tapo.slice(1));
+    // }
+    // if (ret.length >= 10) {
+    //   setRet((ret) => [...ret, ret[0]]);
+    //   setRet((ret) => ret.slice(1));
+    // }
+  };
 
   return (
     <div className="App">
@@ -109,9 +159,9 @@ function App() {
           {/* div container-content precisa ter 2 colunas e 3 linhas OU 2 colunas e duas linhas apenas e deixa a DIV de retorno fora dessa abaixo da div container-content */}
           <div className="container-content">
             <div className="container-orders" id="BOR">
-              <p>Borracharia - Qtd: {ordersList.borr.length}</p>
+              <p>Borracharia - Qtd: {borr.length}</p>
               <div className="orders">
-                {ordersList.borr.map((item) => {
+                {borr.map((item) => {
                   return (
                     <ul key={uuid()}>
                       <span className="span-os">{item.OS}</span>
@@ -124,9 +174,9 @@ function App() {
               </div>
             </div>
             <div className="container-orders" id="ELE">
-              <p>Elétrica - Qtd: {ordersList.elet.length}</p>
+              <p>Elétrica - Qtd: {elet.length}</p>
               <div className="orders" id="TEST">
-                {ordersList.elet.map((item) => {
+                {elet.map((item) => {
                   return (
                     <ul key={uuid()}>
                       <span className="span-os">{item.OS}</span>
@@ -139,9 +189,9 @@ function App() {
               </div>
             </div>
             <div className="container-orders" id="FUN">
-              <p>Funilaria - Qtd: {ordersList.fupi.length}</p>
+              <p>Funilaria - Qtd: {fupi.length}</p>
               <div className="orders">
-                {ordersList.fupi.map((item) => {
+                {fupi.map((item) => {
                   return (
                     <ul key={uuid()}>
                       <span className="span-os">{item.OS}</span>
@@ -154,9 +204,9 @@ function App() {
               </div>
             </div>
             <div className="container-orders" id="LUB">
-              <p>Lubrificação - Qtd: {ordersList.lubr.length}</p>
+              <p>Lubrificação - Qtd: {lubr.length}</p>
               <div className="orders">
-                {ordersList.lubr.map((item) => {
+                {lubr.map((item) => {
                   return (
                     <ul key={uuid()}>
                       <span className="span-os">{item.OS}</span>
@@ -169,9 +219,9 @@ function App() {
               </div>
             </div>
             <div className="container-orders" id="MEC">
-              <p>Mecânica - Qtd: {ordersList.meca.length}</p>
+              <p>Mecânica - Qtd: {meca.length}</p>
               <div className="orders">
-                {ordersList.meca.map((item) => {
+                {meca.map((item) => {
                   return (
                     <ul key={uuid()}>
                       <span className="span-os">{item.OS}</span>
@@ -184,9 +234,9 @@ function App() {
               </div>
             </div>
             <div className="container-orders" id="TAP">
-              <p>Tapeçaria - Qtd: {ordersList.tapo.length}</p>
+              <p>Tapeçaria - Qtd: {tapo.length}</p>
               <div className="orders">
-                {ordersList.tapo.map((item) => {
+                {tapo.map((item) => {
                   return (
                     <ul key={uuid()}>
                       <span className="span-os">{item.OS}</span>
@@ -200,9 +250,9 @@ function App() {
             </div>
           </div>
           <div className="container-orders-footer" id="RET">
-            <p>OS Retorno - Qtd: {ordersList.ret.length}</p>
+            <p>OS Retorno - Qtd: {ret.length}</p>
             <div className="orders">
-              {ordersList.ret.map((item) => {
+              {ret.map((item) => {
                 return (
                   <ul key={uuid()}>
                     <span className="span-os">{item.OS}</span>
@@ -220,9 +270,9 @@ function App() {
           {/* div container-content precisa ter 2 colunas e 3 linhas OU 2 colunas e duas linhas apenas e deixa a DIV de retorno fora dessa abaixo da div container-content */}
           <div className="container-content">
             <div className="container-orders" id="BOR">
-              <p>Borracharia - Qtd: {ordersList.borr.length}</p>
+              <p>Borracharia - Qtd: {borr.length}</p>
               <div className="orders">
-                {ordersList.borr.map((item) => {
+                {borr.map((item) => {
                   return (
                     <ul key={uuid()}>
                       <span className="span-os">{item.OS}</span>
@@ -235,9 +285,9 @@ function App() {
               </div>
             </div>
             <div className="container-orders" id="ELE">
-              <p>Elétrica - Qtd: {ordersList.borr.length}</p>
+              <p>Elétrica - Qtd: {borr.length}</p>
               <div className="orders">
-                {ordersList.borr.map((item) => {
+                {borr.map((item) => {
                   return (
                     <ul key={uuid()}>
                       <span className="span-os">{item.OS}</span>
@@ -250,9 +300,9 @@ function App() {
               </div>
             </div>
             <div className="container-orders" id="FUN">
-              <p>Funilaria - Qtd: {ordersList.borr.length}</p>
+              <p>Funilaria - Qtd: {borr.length}</p>
               <div className="orders">
-                {ordersList.borr.map((item) => {
+                {borr.map((item) => {
                   return (
                     <ul key={uuid()}>
                       <span className="span-os">{item.OS}</span>
@@ -265,9 +315,9 @@ function App() {
               </div>
             </div>
             <div className="container-orders" id="LUB">
-              <p>Lubrificação - Qtd: {ordersList.borr.length}</p>
+              <p>Lubrificação - Qtd: {borr.length}</p>
               <div className="orders">
-                {ordersList.borr.map((item) => {
+                {borr.map((item) => {
                   return (
                     <ul key={uuid()}>
                       <span className="span-os">{item.OS}</span>
@@ -280,9 +330,9 @@ function App() {
               </div>
             </div>
             <div className="container-orders" id="MEC">
-              <p>Mecânica - Qtd: {ordersList.borr.length}</p>
+              <p>Mecânica - Qtd: {borr.length}</p>
               <div className="orders">
-                {ordersList.borr.map((item) => {
+                {borr.map((item) => {
                   return (
                     <ul key={uuid()}>
                       <span className="span-os">{item.OS}</span>
@@ -295,9 +345,9 @@ function App() {
               </div>
             </div>
             <div className="container-orders" id="TAP">
-              <p>Tapeçaria - Qtd: {ordersList.borr.length}</p>
+              <p>Tapeçaria - Qtd: {borr.length}</p>
               <div className="orders">
-                {ordersList.borr.map((item) => {
+                {borr.map((item) => {
                   return (
                     <ul key={uuid()}>
                       <span className="span-os">{item.OS}</span>
@@ -311,9 +361,9 @@ function App() {
             </div>
           </div>
           <div className="container-orders-footer" id="RET">
-            <p>OS Retorno - Qtd: {ordersList.borr.length}</p>
+            <p>OS Retorno - Qtd: {borr.length}</p>
             <div className="orders">
-              {ordersList.borr.map((item) => {
+              {borr.map((item) => {
                 return (
                   <ul key={uuid()}>
                     <span className="span-os">{item.OS}</span>
