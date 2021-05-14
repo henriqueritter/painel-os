@@ -1,107 +1,965 @@
-[{"SETOR":"BORRACHARIA", "OS":1584, "PREFIXO":"72034", "DT_ABER":"10\/Fev 07:43", "DEFEITOS":" ", "QTD":17, "QTDTT":23},
-{"SETOR":"BORRACHARIA", "OS":1585, "PREFIXO":"72035", "DT_ABER":"10\/Fev 07:44", "DEFEITOS":" ", "QTD":17, "QTDTT":23},
-{"SETOR":"BORRACHARIA", "OS":713, "PREFIXO":"72010", "DT_ABER":"16\/Fev 12:56", "DEFEITOS":" ", "QTD":17, "QTDTT":23},
-{"SETOR":"BORRACHARIA", "OS":1297, "PREFIXO":"72001", "DT_ABER":"19\/Fev 14:42", "DEFEITOS":" ", "QTD":17, "QTDTT":23},
-{"SETOR":"BORRACHARIA", "OS":1303, "PREFIXO":"72007", "DT_ABER":"19\/Fev 14:42", "DEFEITOS":" ", "QTD":17, "QTDTT":23},
-{"SETOR":"BORRACHARIA", "OS":1306, "PREFIXO":"72010", "DT_ABER":"19\/Fev 14:42", "DEFEITOS":" ", "QTD":17, "QTDTT":23},
-{"SETOR":"BORRACHARIA", "OS":1415, "PREFIXO":"72011", "DT_ABER":"24\/Fev 15:51", "DEFEITOS":" ", "QTD":17, "QTDTT":23},
-{"SETOR":"BORRACHARIA", "OS":2286, "PREFIXO":"72038", "DT_ABER":"30\/Mar 13:48", "DEFEITOS":" ", "QTD":17, "QTDTT":23},
-{"SETOR":"BORRACHARIA", "OS":2288, "PREFIXO":"72042", "DT_ABER":"30\/Mar 13:53", "DEFEITOS":" ", "QTD":17, "QTDTT":23},
-{"SETOR":"BORRACHARIA", "OS":2289, "PREFIXO":"72039", "DT_ABER":"30\/Mar 13:54", "DEFEITOS":" ", "QTD":17, "QTDTT":23},
-{"SETOR":"BORRACHARIA", "OS":2290, "PREFIXO":"72052", "DT_ABER":"30\/Mar 13:55", "DEFEITOS":" ", "QTD":17, "QTDTT":23},
-{"SETOR":"BORRACHARIA", "OS":2291, "PREFIXO":"72032", "DT_ABER":"30\/Mar 13:55", "DEFEITOS":" ", "QTD":17, "QTDTT":23},
-{"SETOR":"BORRACHARIA", "OS":2531, "PREFIXO":"72053", "DT_ABER":"07\/Abr 08:40", "DEFEITOS":" ", "QTD":17, "QTDTT":23},
-{"SETOR":"BORRACHARIA", "OS":2532, "PREFIXO":"72051", "DT_ABER":"07\/Abr 08:42", "DEFEITOS":" ", "QTD":17, "QTDTT":23},
-{"SETOR":"BORRACHARIA", "OS":2533, "PREFIXO":"72036", "DT_ABER":"07\/Abr 08:43", "DEFEITOS":" ", "QTD":17, "QTDTT":23},
-{"SETOR":"BORRACHARIA", "OS":2534, "PREFIXO":"72058", "DT_ABER":"07\/Abr 08:44", "DEFEITOS":" ", "QTD":17, "QTDTT":23},
-{"SETOR":"BORRACHARIA", "OS":2535, "PREFIXO":"72040", "DT_ABER":"07\/Abr 08:44", "DEFEITOS":" ", "QTD":17, "QTDTT":23},
-{"SETOR":"ELÉTRICA", "OS":1584, "PREFIXO":"72034", "DT_ABER":"10\/Fev 07:43", "DEFEITOS":" ", "QTD":17, "QTDTT":23},
-{"SETOR":"ELÉTRICA", "OS":1585, "PREFIXO":"72035", "DT_ABER":"10\/Fev 07:44", "DEFEITOS":" ", "QTD":17, "QTDTT":23},
-{"SETOR":"ELÉTRICA", "OS":713, "PREFIXO":"72010", "DT_ABER":"16\/Fev 12:56", "DEFEITOS":" ", "QTD":17, "QTDTT":23},
-{"SETOR":"ELÉTRICA", "OS":1297, "PREFIXO":"72001", "DT_ABER":"19\/Fev 14:42", "DEFEITOS":" ", "QTD":17, "QTDTT":23},
-{"SETOR":"ELÉTRICA", "OS":1303, "PREFIXO":"72007", "DT_ABER":"19\/Fev 14:42", "DEFEITOS":" ", "QTD":17, "QTDTT":23},
-{"SETOR":"ELÉTRICA", "OS":1306, "PREFIXO":"72010", "DT_ABER":"19\/Fev 14:42", "DEFEITOS":" ", "QTD":17, "QTDTT":23},
-{"SETOR":"ELÉTRICA", "OS":1415, "PREFIXO":"72011", "DT_ABER":"24\/Fev 15:51", "DEFEITOS":" ", "QTD":17, "QTDTT":23},
-{"SETOR":"ELÉTRICA", "OS":2286, "PREFIXO":"72038", "DT_ABER":"30\/Mar 13:48", "DEFEITOS":" ", "QTD":17, "QTDTT":23},
-{"SETOR":"ELÉTRICA", "OS":2288, "PREFIXO":"72042", "DT_ABER":"30\/Mar 13:53", "DEFEITOS":" ", "QTD":17, "QTDTT":23},
-{"SETOR":"ELÉTRICA", "OS":2289, "PREFIXO":"72039", "DT_ABER":"30\/Mar 13:54", "DEFEITOS":" ", "QTD":17, "QTDTT":23},
-{"SETOR":"ELÉTRICA", "OS":2290, "PREFIXO":"72052", "DT_ABER":"30\/Mar 13:55", "DEFEITOS":" ", "QTD":17, "QTDTT":23},
-{"SETOR":"ELÉTRICA", "OS":2291, "PREFIXO":"72032", "DT_ABER":"30\/Mar 13:55", "DEFEITOS":" ", "QTD":17, "QTDTT":23},
-{"SETOR":"ELÉTRICA", "OS":2531, "PREFIXO":"72053", "DT_ABER":"07\/Abr 08:40", "DEFEITOS":" ", "QTD":17, "QTDTT":23},
-{"SETOR":"ELÉTRICA", "OS":2532, "PREFIXO":"72051", "DT_ABER":"07\/Abr 08:42", "DEFEITOS":" ", "QTD":17, "QTDTT":23},
-{"SETOR":"ELÉTRICA", "OS":2533, "PREFIXO":"72036", "DT_ABER":"07\/Abr 08:43", "DEFEITOS":" ", "QTD":17, "QTDTT":23},
-{"SETOR":"ELÉTRICA", "OS":2534, "PREFIXO":"72058", "DT_ABER":"07\/Abr 08:44", "DEFEITOS":" ", "QTD":17, "QTDTT":23},
-{"SETOR":"ELÉTRICA", "OS":2535, "PREFIXO":"72040", "DT_ABER":"07\/Abr 08:44", "DEFEITOS":" ", "QTD":17, "QTDTT":23},
-{"SETOR":"FUNIL\/PINT", "OS":1584, "PREFIXO":"72034", "DT_ABER":"10\/Fev 07:43", "DEFEITOS":" ", "QTD":17, "QTDTT":23},
-{"SETOR":"FUNIL\/PINT", "OS":1585, "PREFIXO":"72035", "DT_ABER":"10\/Fev 07:44", "DEFEITOS":" ", "QTD":17, "QTDTT":23},
-{"SETOR":"FUNIL\/PINT", "OS":713, "PREFIXO":"72010", "DT_ABER":"16\/Fev 12:56", "DEFEITOS":" ", "QTD":17, "QTDTT":23},
-{"SETOR":"FUNIL\/PINT", "OS":1297, "PREFIXO":"72001", "DT_ABER":"19\/Fev 14:42", "DEFEITOS":" ", "QTD":17, "QTDTT":23},
-{"SETOR":"FUNIL\/PINT", "OS":1303, "PREFIXO":"72007", "DT_ABER":"19\/Fev 14:42", "DEFEITOS":" ", "QTD":17, "QTDTT":23},
-{"SETOR":"FUNIL\/PINT", "OS":1306, "PREFIXO":"72010", "DT_ABER":"19\/Fev 14:42", "DEFEITOS":" ", "QTD":17, "QTDTT":23},
-{"SETOR":"FUNIL\/PINT", "OS":1415, "PREFIXO":"72011", "DT_ABER":"24\/Fev 15:51", "DEFEITOS":" ", "QTD":17, "QTDTT":23},
-{"SETOR":"FUNIL\/PINT", "OS":2286, "PREFIXO":"72038", "DT_ABER":"30\/Mar 13:48", "DEFEITOS":" ", "QTD":17, "QTDTT":23},
-{"SETOR":"FUNIL\/PINT", "OS":2288, "PREFIXO":"72042", "DT_ABER":"30\/Mar 13:53", "DEFEITOS":" ", "QTD":17, "QTDTT":23},
-{"SETOR":"FUNIL\/PINT", "OS":2289, "PREFIXO":"72039", "DT_ABER":"30\/Mar 13:54", "DEFEITOS":" ", "QTD":17, "QTDTT":23},
-{"SETOR":"FUNIL\/PINT", "OS":2290, "PREFIXO":"72052", "DT_ABER":"30\/Mar 13:55", "DEFEITOS":" ", "QTD":17, "QTDTT":23},
-{"SETOR":"FUNIL\/PINT", "OS":2291, "PREFIXO":"72032", "DT_ABER":"30\/Mar 13:55", "DEFEITOS":" ", "QTD":17, "QTDTT":23},
-{"SETOR":"FUNIL\/PINT", "OS":2531, "PREFIXO":"72053", "DT_ABER":"07\/Abr 08:40", "DEFEITOS":" ", "QTD":17, "QTDTT":23},
-{"SETOR":"FUNIL\/PINT", "OS":2532, "PREFIXO":"72051", "DT_ABER":"07\/Abr 08:42", "DEFEITOS":" ", "QTD":17, "QTDTT":23},
-{"SETOR":"FUNIL\/PINT", "OS":2533, "PREFIXO":"72036", "DT_ABER":"07\/Abr 08:43", "DEFEITOS":" ", "QTD":17, "QTDTT":23},
-{"SETOR":"FUNIL\/PINT", "OS":2534, "PREFIXO":"72058", "DT_ABER":"07\/Abr 08:44", "DEFEITOS":" ", "QTD":17, "QTDTT":23},
-{"SETOR":"FUNIL\/PINT", "OS":2535, "PREFIXO":"72040", "DT_ABER":"07\/Abr 08:44", "DEFEITOS":" ", "QTD":17, "QTDTT":23},
-{"SETOR":"LUBRIFICAÇÃO", "OS":1584, "PREFIXO":"72034", "DT_ABER":"10\/Fev 07:43", "DEFEITOS":" ", "QTD":20, "QTDTT":23},
-{"SETOR":"LUBRIFICAÇÃO", "OS":1585, "PREFIXO":"72035", "DT_ABER":"10\/Fev 07:44", "DEFEITOS":" ", "QTD":20, "QTDTT":23},
-{"SETOR":"LUBRIFICAÇÃO", "OS":713, "PREFIXO":"72010", "DT_ABER":"16\/Fev 12:56", "DEFEITOS":" ", "QTD":20, "QTDTT":23},
-{"SETOR":"LUBRIFICAÇÃO", "OS":1277, "PREFIXO":"72001", "DT_ABER":"19\/Fev 14:20", "DEFEITOS":" ", "QTD":20, "QTDTT":23},
-{"SETOR":"LUBRIFICAÇÃO", "OS":1283, "PREFIXO":"72007", "DT_ABER":"19\/Fev 14:20", "DEFEITOS":" ", "QTD":20, "QTDTT":23},
-{"SETOR":"LUBRIFICAÇÃO", "OS":1286, "PREFIXO":"72010", "DT_ABER":"19\/Fev 14:20", "DEFEITOS":" ", "QTD":20, "QTDTT":23},
-{"SETOR":"LUBRIFICAÇÃO", "OS":1297, "PREFIXO":"72001", "DT_ABER":"19\/Fev 14:42", "DEFEITOS":" ", "QTD":20, "QTDTT":23},
-{"SETOR":"LUBRIFICAÇÃO", "OS":1303, "PREFIXO":"72007", "DT_ABER":"19\/Fev 14:42", "DEFEITOS":" ", "QTD":20, "QTDTT":23},
-{"SETOR":"LUBRIFICAÇÃO", "OS":1306, "PREFIXO":"72010", "DT_ABER":"19\/Fev 14:42", "DEFEITOS":" ", "QTD":20, "QTDTT":23},
-{"SETOR":"LUBRIFICAÇÃO", "OS":1415, "PREFIXO":"72011", "DT_ABER":"24\/Fev 15:51", "DEFEITOS":" ", "QTD":20, "QTDTT":23},
-{"SETOR":"LUBRIFICAÇÃO", "OS":2286, "PREFIXO":"72038", "DT_ABER":"30\/Mar 13:48", "DEFEITOS":" ", "QTD":20, "QTDTT":23},
-{"SETOR":"LUBRIFICAÇÃO", "OS":2288, "PREFIXO":"72042", "DT_ABER":"30\/Mar 13:53", "DEFEITOS":" ", "QTD":20, "QTDTT":23},
-{"SETOR":"LUBRIFICAÇÃO", "OS":2289, "PREFIXO":"72039", "DT_ABER":"30\/Mar 13:54", "DEFEITOS":" ", "QTD":20, "QTDTT":23},
-{"SETOR":"LUBRIFICAÇÃO", "OS":2290, "PREFIXO":"72052", "DT_ABER":"30\/Mar 13:55", "DEFEITOS":" ", "QTD":20, "QTDTT":23},
-{"SETOR":"LUBRIFICAÇÃO", "OS":2291, "PREFIXO":"72032", "DT_ABER":"30\/Mar 13:55", "DEFEITOS":" ", "QTD":20, "QTDTT":23},
-{"SETOR":"LUBRIFICAÇÃO", "OS":2531, "PREFIXO":"72053", "DT_ABER":"07\/Abr 08:40", "DEFEITOS":" ", "QTD":20, "QTDTT":23},
-{"SETOR":"LUBRIFICAÇÃO", "OS":2532, "PREFIXO":"72051", "DT_ABER":"07\/Abr 08:42", "DEFEITOS":" ", "QTD":20, "QTDTT":23},
-{"SETOR":"LUBRIFICAÇÃO", "OS":2533, "PREFIXO":"72036", "DT_ABER":"07\/Abr 08:43", "DEFEITOS":" ", "QTD":20, "QTDTT":23},
-{"SETOR":"LUBRIFICAÇÃO", "OS":2534, "PREFIXO":"72058", "DT_ABER":"07\/Abr 08:44", "DEFEITOS":" ", "QTD":20, "QTDTT":23},
-{"SETOR":"LUBRIFICAÇÃO", "OS":2535, "PREFIXO":"72040", "DT_ABER":"07\/Abr 08:44", "DEFEITOS":" ", "QTD":20, "QTDTT":23},
-{"SETOR":"MECÂNICA", "OS":1584, "PREFIXO":"72034", "DT_ABER":"10\/Fev 07:43", "DEFEITOS":" ", "QTD":20, "QTDTT":23},
-{"SETOR":"MECÂNICA", "OS":1585, "PREFIXO":"72035", "DT_ABER":"10\/Fev 07:44", "DEFEITOS":" ", "QTD":20, "QTDTT":23},
-{"SETOR":"MECÂNICA", "OS":713, "PREFIXO":"72010", "DT_ABER":"16\/Fev 12:56", "DEFEITOS":" ", "QTD":20, "QTDTT":23},
-{"SETOR":"MECÂNICA", "OS":1287, "PREFIXO":"72001", "DT_ABER":"19\/Fev 14:22", "DEFEITOS":" ", "QTD":20, "QTDTT":23},
-{"SETOR":"MECÂNICA", "OS":1293, "PREFIXO":"72007", "DT_ABER":"19\/Fev 14:22", "DEFEITOS":" ", "QTD":20, "QTDTT":23},
-{"SETOR":"MECÂNICA", "OS":1296, "PREFIXO":"72010", "DT_ABER":"19\/Fev 14:22", "DEFEITOS":" ", "QTD":20, "QTDTT":23},
-{"SETOR":"MECÂNICA", "OS":1297, "PREFIXO":"72001", "DT_ABER":"19\/Fev 14:42", "DEFEITOS":" ", "QTD":20, "QTDTT":23},
-{"SETOR":"MECÂNICA", "OS":1303, "PREFIXO":"72007", "DT_ABER":"19\/Fev 14:42", "DEFEITOS":" ", "QTD":20, "QTDTT":23},
-{"SETOR":"MECÂNICA", "OS":1306, "PREFIXO":"72010", "DT_ABER":"19\/Fev 14:42", "DEFEITOS":" ", "QTD":20, "QTDTT":23},
-{"SETOR":"MECÂNICA", "OS":1415, "PREFIXO":"72011", "DT_ABER":"24\/Fev 15:51", "DEFEITOS":" ", "QTD":20, "QTDTT":23},
-{"SETOR":"MECÂNICA", "OS":2286, "PREFIXO":"72038", "DT_ABER":"30\/Mar 13:48", "DEFEITOS":" ", "QTD":20, "QTDTT":23},
-{"SETOR":"MECÂNICA", "OS":2288, "PREFIXO":"72042", "DT_ABER":"30\/Mar 13:53", "DEFEITOS":" ", "QTD":20, "QTDTT":23},
-{"SETOR":"MECÂNICA", "OS":2289, "PREFIXO":"72039", "DT_ABER":"30\/Mar 13:54", "DEFEITOS":" ", "QTD":20, "QTDTT":23},
-{"SETOR":"MECÂNICA", "OS":2290, "PREFIXO":"72052", "DT_ABER":"30\/Mar 13:55", "DEFEITOS":" ", "QTD":20, "QTDTT":23},
-{"SETOR":"MECÂNICA", "OS":2291, "PREFIXO":"72032", "DT_ABER":"30\/Mar 13:55", "DEFEITOS":" ", "QTD":20, "QTDTT":23},
-{"SETOR":"MECÂNICA", "OS":2531, "PREFIXO":"72053", "DT_ABER":"07\/Abr 08:40", "DEFEITOS":" ", "QTD":20, "QTDTT":23},
-{"SETOR":"MECÂNICA", "OS":2532, "PREFIXO":"72051", "DT_ABER":"07\/Abr 08:42", "DEFEITOS":" ", "QTD":20, "QTDTT":23},
-{"SETOR":"MECÂNICA", "OS":2533, "PREFIXO":"72036", "DT_ABER":"07\/Abr 08:43", "DEFEITOS":" ", "QTD":20, "QTDTT":23},
-{"SETOR":"MECÂNICA", "OS":2534, "PREFIXO":"72058", "DT_ABER":"07\/Abr 08:44", "DEFEITOS":" ", "QTD":20, "QTDTT":23},
-{"SETOR":"MECÂNICA", "OS":2535, "PREFIXO":"72040", "DT_ABER":"07\/Abr 08:44", "DEFEITOS":" ", "QTD":20, "QTDTT":23},
-{"SETOR":"TAPEÇARIA\/OUTROS", "OS":1584, "PREFIXO":"72034", "DT_ABER":"10\/Fev 07:43", "DEFEITOS":" ", "QTD":16, "QTDTT":23},
-{"SETOR":"TAPEÇARIA\/OUTROS", "OS":1585, "PREFIXO":"72035", "DT_ABER":"10\/Fev 07:44", "DEFEITOS":" ", "QTD":16, "QTDTT":23},
-{"SETOR":"TAPEÇARIA\/OUTROS", "OS":1297, "PREFIXO":"72001", "DT_ABER":"19\/Fev 14:42", "DEFEITOS":" ", "QTD":16, "QTDTT":23},
-{"SETOR":"TAPEÇARIA\/OUTROS", "OS":1303, "PREFIXO":"72007", "DT_ABER":"19\/Fev 14:42", "DEFEITOS":" ", "QTD":16, "QTDTT":23},
-{"SETOR":"TAPEÇARIA\/OUTROS", "OS":1306, "PREFIXO":"72010", "DT_ABER":"19\/Fev 14:42", "DEFEITOS":" ", "QTD":16, "QTDTT":23},
-{"SETOR":"TAPEÇARIA\/OUTROS", "OS":1415, "PREFIXO":"72011", "DT_ABER":"24\/Fev 15:51", "DEFEITOS":" ", "QTD":16, "QTDTT":23},
-{"SETOR":"TAPEÇARIA\/OUTROS", "OS":2286, "PREFIXO":"72038", "DT_ABER":"30\/Mar 13:48", "DEFEITOS":" ", "QTD":16, "QTDTT":23},
-{"SETOR":"TAPEÇARIA\/OUTROS", "OS":2288, "PREFIXO":"72042", "DT_ABER":"30\/Mar 13:53", "DEFEITOS":" ", "QTD":16, "QTDTT":23},
-{"SETOR":"TAPEÇARIA\/OUTROS", "OS":2289, "PREFIXO":"72039", "DT_ABER":"30\/Mar 13:54", "DEFEITOS":" ", "QTD":16, "QTDTT":23},
-{"SETOR":"TAPEÇARIA\/OUTROS", "OS":2290, "PREFIXO":"72052", "DT_ABER":"30\/Mar 13:55", "DEFEITOS":" ", "QTD":16, "QTDTT":23},
-{"SETOR":"TAPEÇARIA\/OUTROS", "OS":2291, "PREFIXO":"72032", "DT_ABER":"30\/Mar 13:55", "DEFEITOS":" ", "QTD":16, "QTDTT":23},
-{"SETOR":"TAPEÇARIA\/OUTROS", "OS":2531, "PREFIXO":"72053", "DT_ABER":"07\/Abr 08:40", "DEFEITOS":" ", "QTD":16, "QTDTT":23},
-{"SETOR":"TAPEÇARIA\/OUTROS", "OS":2532, "PREFIXO":"72051", "DT_ABER":"07\/Abr 08:42", "DEFEITOS":" ", "QTD":16, "QTDTT":23},
-{"SETOR":"TAPEÇARIA\/OUTROS", "OS":2533, "PREFIXO":"72036", "DT_ABER":"07\/Abr 08:43", "DEFEITOS":" ", "QTD":16, "QTDTT":23},
-{"SETOR":"TAPEÇARIA\/OUTROS", "OS":2534, "PREFIXO":"72058", "DT_ABER":"07\/Abr 08:44", "DEFEITOS":" ", "QTD":16, "QTDTT":23},
-{"SETOR":"TAPEÇARIA\/OUTROS", "OS":2535, "PREFIXO":"72040", "DT_ABER":"07\/Abr 08:44", "DEFEITOS":" ", "QTD":16, "QTDTT":23}]
+[
+  {
+    "SETOR": "BORRACHARIA",
+    "OS": 1584,
+    "PREFIXO": "72034",
+    "DT_ABER": "10/Fev 07:43",
+    "DEFEITOS": " ",
+    "QTD": 17,
+    "QTDTT": 23
+  },
+  {
+    "SETOR": "BORRACHARIA",
+    "OS": 1585,
+    "PREFIXO": "72035",
+    "DT_ABER": "10/Fev 07:44",
+    "DEFEITOS": " ",
+    "QTD": 17,
+    "QTDTT": 23
+  },
+  {
+    "SETOR": "BORRACHARIA",
+    "OS": 713,
+    "PREFIXO": "72010",
+    "DT_ABER": "16/Fev 12:56",
+    "DEFEITOS": " ",
+    "QTD": 17,
+    "QTDTT": 23
+  },
+  {
+    "SETOR": "BORRACHARIA",
+    "OS": 1297,
+    "PREFIXO": "72001",
+    "DT_ABER": "19/Fev 14:42",
+    "DEFEITOS": " ",
+    "QTD": 17,
+    "QTDTT": 23
+  },
+  {
+    "SETOR": "BORRACHARIA",
+    "OS": 1303,
+    "PREFIXO": "72007",
+    "DT_ABER": "19/Fev 14:42",
+    "DEFEITOS": " ",
+    "QTD": 17,
+    "QTDTT": 23
+  },
+  {
+    "SETOR": "BORRACHARIA",
+    "OS": 1306,
+    "PREFIXO": "72010",
+    "DT_ABER": "19/Fev 14:42",
+    "DEFEITOS": " ",
+    "QTD": 17,
+    "QTDTT": 23
+  },
+  {
+    "SETOR": "BORRACHARIA",
+    "OS": 1415,
+    "PREFIXO": "72011",
+    "DT_ABER": "24/Fev 15:51",
+    "DEFEITOS": " ",
+    "QTD": 17,
+    "QTDTT": 23
+  },
+  {
+    "SETOR": "BORRACHARIA",
+    "OS": 2286,
+    "PREFIXO": "72038",
+    "DT_ABER": "30/Mar 13:48",
+    "DEFEITOS": " ",
+    "QTD": 17,
+    "QTDTT": 23
+  },
+  {
+    "SETOR": "BORRACHARIA",
+    "OS": 2288,
+    "PREFIXO": "72042",
+    "DT_ABER": "30/Mar 13:53",
+    "DEFEITOS": " ",
+    "QTD": 17,
+    "QTDTT": 23
+  },
+  {
+    "SETOR": "BORRACHARIA",
+    "OS": 2289,
+    "PREFIXO": "72039",
+    "DT_ABER": "30/Mar 13:54",
+    "DEFEITOS": " ",
+    "QTD": 17,
+    "QTDTT": 23
+  },
+  {
+    "SETOR": "BORRACHARIA",
+    "OS": 2290,
+    "PREFIXO": "72052",
+    "DT_ABER": "30/Mar 13:55",
+    "DEFEITOS": " ",
+    "QTD": 17,
+    "QTDTT": 23
+  },
+  {
+    "SETOR": "BORRACHARIA",
+    "OS": 2291,
+    "PREFIXO": "72032",
+    "DT_ABER": "30/Mar 13:55",
+    "DEFEITOS": " ",
+    "QTD": 17,
+    "QTDTT": 23
+  },
+  {
+    "SETOR": "BORRACHARIA",
+    "OS": 2531,
+    "PREFIXO": "72053",
+    "DT_ABER": "07/Abr 08:40",
+    "DEFEITOS": " ",
+    "QTD": 17,
+    "QTDTT": 23
+  },
+  {
+    "SETOR": "BORRACHARIA",
+    "OS": 2532,
+    "PREFIXO": "72051",
+    "DT_ABER": "07/Abr 08:42",
+    "DEFEITOS": " ",
+    "QTD": 17,
+    "QTDTT": 23
+  },
+  {
+    "SETOR": "BORRACHARIA",
+    "OS": 2533,
+    "PREFIXO": "72036",
+    "DT_ABER": "07/Abr 08:43",
+    "DEFEITOS": " ",
+    "QTD": 17,
+    "QTDTT": 23
+  },
+  {
+    "SETOR": "BORRACHARIA",
+    "OS": 2534,
+    "PREFIXO": "72058",
+    "DT_ABER": "07/Abr 08:44",
+    "DEFEITOS": " ",
+    "QTD": 17,
+    "QTDTT": 23
+  },
+  {
+    "SETOR": "BORRACHARIA",
+    "OS": 2535,
+    "PREFIXO": "72040",
+    "DT_ABER": "07/Abr 08:44",
+    "DEFEITOS": " ",
+    "QTD": 17,
+    "QTDTT": 23
+  },
+  {
+    "SETOR": "ELï¿½TRICA",
+    "OS": 1584,
+    "PREFIXO": "72034",
+    "DT_ABER": "10/Fev 07:43",
+    "DEFEITOS": " ",
+    "QTD": 17,
+    "QTDTT": 23
+  },
+  {
+    "SETOR": "ELï¿½TRICA",
+    "OS": 1585,
+    "PREFIXO": "72035",
+    "DT_ABER": "10/Fev 07:44",
+    "DEFEITOS": " ",
+    "QTD": 17,
+    "QTDTT": 23
+  },
+  {
+    "SETOR": "ELï¿½TRICA",
+    "OS": 713,
+    "PREFIXO": "72010",
+    "DT_ABER": "16/Fev 12:56",
+    "DEFEITOS": " ",
+    "QTD": 17,
+    "QTDTT": 23
+  },
+  {
+    "SETOR": "ELï¿½TRICA",
+    "OS": 1297,
+    "PREFIXO": "72001",
+    "DT_ABER": "19/Fev 14:42",
+    "DEFEITOS": " ",
+    "QTD": 17,
+    "QTDTT": 23
+  },
+  {
+    "SETOR": "ELï¿½TRICA",
+    "OS": 1303,
+    "PREFIXO": "72007",
+    "DT_ABER": "19/Fev 14:42",
+    "DEFEITOS": " ",
+    "QTD": 17,
+    "QTDTT": 23
+  },
+  {
+    "SETOR": "ELï¿½TRICA",
+    "OS": 1306,
+    "PREFIXO": "72010",
+    "DT_ABER": "19/Fev 14:42",
+    "DEFEITOS": " ",
+    "QTD": 17,
+    "QTDTT": 23
+  },
+  {
+    "SETOR": "ELï¿½TRICA",
+    "OS": 1415,
+    "PREFIXO": "72011",
+    "DT_ABER": "24/Fev 15:51",
+    "DEFEITOS": " ",
+    "QTD": 17,
+    "QTDTT": 23
+  },
+  {
+    "SETOR": "ELï¿½TRICA",
+    "OS": 2286,
+    "PREFIXO": "72038",
+    "DT_ABER": "30/Mar 13:48",
+    "DEFEITOS": " ",
+    "QTD": 17,
+    "QTDTT": 23
+  },
+  {
+    "SETOR": "ELï¿½TRICA",
+    "OS": 2288,
+    "PREFIXO": "72042",
+    "DT_ABER": "30/Mar 13:53",
+    "DEFEITOS": " ",
+    "QTD": 17,
+    "QTDTT": 23
+  },
+  {
+    "SETOR": "ELï¿½TRICA",
+    "OS": 2289,
+    "PREFIXO": "72039",
+    "DT_ABER": "30/Mar 13:54",
+    "DEFEITOS": " ",
+    "QTD": 17,
+    "QTDTT": 23
+  },
+  {
+    "SETOR": "ELï¿½TRICA",
+    "OS": 2290,
+    "PREFIXO": "72052",
+    "DT_ABER": "30/Mar 13:55",
+    "DEFEITOS": " ",
+    "QTD": 17,
+    "QTDTT": 23
+  },
+  {
+    "SETOR": "ELï¿½TRICA",
+    "OS": 2291,
+    "PREFIXO": "72032",
+    "DT_ABER": "30/Mar 13:55",
+    "DEFEITOS": " ",
+    "QTD": 17,
+    "QTDTT": 23
+  },
+  {
+    "SETOR": "ELï¿½TRICA",
+    "OS": 2531,
+    "PREFIXO": "72053",
+    "DT_ABER": "07/Abr 08:40",
+    "DEFEITOS": " ",
+    "QTD": 17,
+    "QTDTT": 23
+  },
+  {
+    "SETOR": "ELï¿½TRICA",
+    "OS": 2532,
+    "PREFIXO": "72051",
+    "DT_ABER": "07/Abr 08:42",
+    "DEFEITOS": " ",
+    "QTD": 17,
+    "QTDTT": 23
+  },
+  {
+    "SETOR": "ELï¿½TRICA",
+    "OS": 2533,
+    "PREFIXO": "72036",
+    "DT_ABER": "07/Abr 08:43",
+    "DEFEITOS": " ",
+    "QTD": 17,
+    "QTDTT": 23
+  },
+  {
+    "SETOR": "ELï¿½TRICA",
+    "OS": 2534,
+    "PREFIXO": "72058",
+    "DT_ABER": "07/Abr 08:44",
+    "DEFEITOS": " ",
+    "QTD": 17,
+    "QTDTT": 23
+  },
+  {
+    "SETOR": "ELï¿½TRICA",
+    "OS": 2535,
+    "PREFIXO": "72040",
+    "DT_ABER": "07/Abr 08:44",
+    "DEFEITOS": " ",
+    "QTD": 17,
+    "QTDTT": 23
+  },
+  {
+    "SETOR": "FUNIL/PINT",
+    "OS": 1584,
+    "PREFIXO": "72034",
+    "DT_ABER": "10/Fev 07:43",
+    "DEFEITOS": " ",
+    "QTD": 17,
+    "QTDTT": 23
+  },
+  {
+    "SETOR": "FUNIL/PINT",
+    "OS": 1585,
+    "PREFIXO": "72035",
+    "DT_ABER": "10/Fev 07:44",
+    "DEFEITOS": " ",
+    "QTD": 17,
+    "QTDTT": 23
+  },
+  {
+    "SETOR": "FUNIL/PINT",
+    "OS": 713,
+    "PREFIXO": "72010",
+    "DT_ABER": "16/Fev 12:56",
+    "DEFEITOS": " ",
+    "QTD": 17,
+    "QTDTT": 23
+  },
+  {
+    "SETOR": "FUNIL/PINT",
+    "OS": 1297,
+    "PREFIXO": "72001",
+    "DT_ABER": "19/Fev 14:42",
+    "DEFEITOS": " ",
+    "QTD": 17,
+    "QTDTT": 23
+  },
+  {
+    "SETOR": "FUNIL/PINT",
+    "OS": 1303,
+    "PREFIXO": "72007",
+    "DT_ABER": "19/Fev 14:42",
+    "DEFEITOS": " ",
+    "QTD": 17,
+    "QTDTT": 23
+  },
+  {
+    "SETOR": "FUNIL/PINT",
+    "OS": 1306,
+    "PREFIXO": "72010",
+    "DT_ABER": "19/Fev 14:42",
+    "DEFEITOS": " ",
+    "QTD": 17,
+    "QTDTT": 23
+  },
+  {
+    "SETOR": "FUNIL/PINT",
+    "OS": 1415,
+    "PREFIXO": "72011",
+    "DT_ABER": "24/Fev 15:51",
+    "DEFEITOS": " ",
+    "QTD": 17,
+    "QTDTT": 23
+  },
+  {
+    "SETOR": "FUNIL/PINT",
+    "OS": 2286,
+    "PREFIXO": "72038",
+    "DT_ABER": "30/Mar 13:48",
+    "DEFEITOS": " ",
+    "QTD": 17,
+    "QTDTT": 23
+  },
+  {
+    "SETOR": "FUNIL/PINT",
+    "OS": 2288,
+    "PREFIXO": "72042",
+    "DT_ABER": "30/Mar 13:53",
+    "DEFEITOS": " ",
+    "QTD": 17,
+    "QTDTT": 23
+  },
+  {
+    "SETOR": "FUNIL/PINT",
+    "OS": 2289,
+    "PREFIXO": "72039",
+    "DT_ABER": "30/Mar 13:54",
+    "DEFEITOS": " ",
+    "QTD": 17,
+    "QTDTT": 23
+  },
+  {
+    "SETOR": "FUNIL/PINT",
+    "OS": 2290,
+    "PREFIXO": "72052",
+    "DT_ABER": "30/Mar 13:55",
+    "DEFEITOS": " ",
+    "QTD": 17,
+    "QTDTT": 23
+  },
+  {
+    "SETOR": "FUNIL/PINT",
+    "OS": 2291,
+    "PREFIXO": "72032",
+    "DT_ABER": "30/Mar 13:55",
+    "DEFEITOS": " ",
+    "QTD": 17,
+    "QTDTT": 23
+  },
+  {
+    "SETOR": "FUNIL/PINT",
+    "OS": 2531,
+    "PREFIXO": "72053",
+    "DT_ABER": "07/Abr 08:40",
+    "DEFEITOS": " ",
+    "QTD": 17,
+    "QTDTT": 23
+  },
+  {
+    "SETOR": "FUNIL/PINT",
+    "OS": 2532,
+    "PREFIXO": "72051",
+    "DT_ABER": "07/Abr 08:42",
+    "DEFEITOS": " ",
+    "QTD": 17,
+    "QTDTT": 23
+  },
+  {
+    "SETOR": "FUNIL/PINT",
+    "OS": 2533,
+    "PREFIXO": "72036",
+    "DT_ABER": "07/Abr 08:43",
+    "DEFEITOS": " ",
+    "QTD": 17,
+    "QTDTT": 23
+  },
+  {
+    "SETOR": "FUNIL/PINT",
+    "OS": 2534,
+    "PREFIXO": "72058",
+    "DT_ABER": "07/Abr 08:44",
+    "DEFEITOS": " ",
+    "QTD": 17,
+    "QTDTT": 23
+  },
+  {
+    "SETOR": "FUNIL/PINT",
+    "OS": 2535,
+    "PREFIXO": "72040",
+    "DT_ABER": "07/Abr 08:44",
+    "DEFEITOS": " ",
+    "QTD": 17,
+    "QTDTT": 23
+  },
+  {
+    "SETOR": "LUBRIFICAï¿½ï¿½O",
+    "OS": 1584,
+    "PREFIXO": "72034",
+    "DT_ABER": "10/Fev 07:43",
+    "DEFEITOS": " ",
+    "QTD": 20,
+    "QTDTT": 23
+  },
+  {
+    "SETOR": "LUBRIFICAï¿½ï¿½O",
+    "OS": 1585,
+    "PREFIXO": "72035",
+    "DT_ABER": "10/Fev 07:44",
+    "DEFEITOS": " ",
+    "QTD": 20,
+    "QTDTT": 23
+  },
+  {
+    "SETOR": "LUBRIFICAï¿½ï¿½O",
+    "OS": 713,
+    "PREFIXO": "72010",
+    "DT_ABER": "16/Fev 12:56",
+    "DEFEITOS": " ",
+    "QTD": 20,
+    "QTDTT": 23
+  },
+  {
+    "SETOR": "LUBRIFICAï¿½ï¿½O",
+    "OS": 1277,
+    "PREFIXO": "72001",
+    "DT_ABER": "19/Fev 14:20",
+    "DEFEITOS": " ",
+    "QTD": 20,
+    "QTDTT": 23
+  },
+  {
+    "SETOR": "LUBRIFICAï¿½ï¿½O",
+    "OS": 1283,
+    "PREFIXO": "72007",
+    "DT_ABER": "19/Fev 14:20",
+    "DEFEITOS": " ",
+    "QTD": 20,
+    "QTDTT": 23
+  },
+  {
+    "SETOR": "LUBRIFICAï¿½ï¿½O",
+    "OS": 1286,
+    "PREFIXO": "72010",
+    "DT_ABER": "19/Fev 14:20",
+    "DEFEITOS": " ",
+    "QTD": 20,
+    "QTDTT": 23
+  },
+  {
+    "SETOR": "LUBRIFICAï¿½ï¿½O",
+    "OS": 1297,
+    "PREFIXO": "72001",
+    "DT_ABER": "19/Fev 14:42",
+    "DEFEITOS": " ",
+    "QTD": 20,
+    "QTDTT": 23
+  },
+  {
+    "SETOR": "LUBRIFICAï¿½ï¿½O",
+    "OS": 1303,
+    "PREFIXO": "72007",
+    "DT_ABER": "19/Fev 14:42",
+    "DEFEITOS": " ",
+    "QTD": 20,
+    "QTDTT": 23
+  },
+  {
+    "SETOR": "LUBRIFICAï¿½ï¿½O",
+    "OS": 1306,
+    "PREFIXO": "72010",
+    "DT_ABER": "19/Fev 14:42",
+    "DEFEITOS": " ",
+    "QTD": 20,
+    "QTDTT": 23
+  },
+  {
+    "SETOR": "LUBRIFICAï¿½ï¿½O",
+    "OS": 1415,
+    "PREFIXO": "72011",
+    "DT_ABER": "24/Fev 15:51",
+    "DEFEITOS": " ",
+    "QTD": 20,
+    "QTDTT": 23
+  },
+  {
+    "SETOR": "LUBRIFICAï¿½ï¿½O",
+    "OS": 2286,
+    "PREFIXO": "72038",
+    "DT_ABER": "30/Mar 13:48",
+    "DEFEITOS": " ",
+    "QTD": 20,
+    "QTDTT": 23
+  },
+  {
+    "SETOR": "LUBRIFICAï¿½ï¿½O",
+    "OS": 2288,
+    "PREFIXO": "72042",
+    "DT_ABER": "30/Mar 13:53",
+    "DEFEITOS": " ",
+    "QTD": 20,
+    "QTDTT": 23
+  },
+  {
+    "SETOR": "LUBRIFICAï¿½ï¿½O",
+    "OS": 2289,
+    "PREFIXO": "72039",
+    "DT_ABER": "30/Mar 13:54",
+    "DEFEITOS": " ",
+    "QTD": 20,
+    "QTDTT": 23
+  },
+  {
+    "SETOR": "LUBRIFICAï¿½ï¿½O",
+    "OS": 2290,
+    "PREFIXO": "72052",
+    "DT_ABER": "30/Mar 13:55",
+    "DEFEITOS": " ",
+    "QTD": 20,
+    "QTDTT": 23
+  },
+  {
+    "SETOR": "LUBRIFICAï¿½ï¿½O",
+    "OS": 2291,
+    "PREFIXO": "72032",
+    "DT_ABER": "30/Mar 13:55",
+    "DEFEITOS": " ",
+    "QTD": 20,
+    "QTDTT": 23
+  },
+  {
+    "SETOR": "LUBRIFICAï¿½ï¿½O",
+    "OS": 2531,
+    "PREFIXO": "72053",
+    "DT_ABER": "07/Abr 08:40",
+    "DEFEITOS": " ",
+    "QTD": 20,
+    "QTDTT": 23
+  },
+  {
+    "SETOR": "LUBRIFICAï¿½ï¿½O",
+    "OS": 2532,
+    "PREFIXO": "72051",
+    "DT_ABER": "07/Abr 08:42",
+    "DEFEITOS": " ",
+    "QTD": 20,
+    "QTDTT": 23
+  },
+  {
+    "SETOR": "LUBRIFICAï¿½ï¿½O",
+    "OS": 2533,
+    "PREFIXO": "72036",
+    "DT_ABER": "07/Abr 08:43",
+    "DEFEITOS": " ",
+    "QTD": 20,
+    "QTDTT": 23
+  },
+  {
+    "SETOR": "LUBRIFICAï¿½ï¿½O",
+    "OS": 2534,
+    "PREFIXO": "72058",
+    "DT_ABER": "07/Abr 08:44",
+    "DEFEITOS": " ",
+    "QTD": 20,
+    "QTDTT": 23
+  },
+  {
+    "SETOR": "LUBRIFICAï¿½ï¿½O",
+    "OS": 2535,
+    "PREFIXO": "72040",
+    "DT_ABER": "07/Abr 08:44",
+    "DEFEITOS": " ",
+    "QTD": 20,
+    "QTDTT": 23
+  },
+  {
+    "SETOR": "MECï¿½NICA",
+    "OS": 1584,
+    "PREFIXO": "72034",
+    "DT_ABER": "10/Fev 07:43",
+    "DEFEITOS": " ",
+    "QTD": 20,
+    "QTDTT": 23
+  },
+  {
+    "SETOR": "MECï¿½NICA",
+    "OS": 1585,
+    "PREFIXO": "72035",
+    "DT_ABER": "10/Fev 07:44",
+    "DEFEITOS": " ",
+    "QTD": 20,
+    "QTDTT": 23
+  },
+  {
+    "SETOR": "MECï¿½NICA",
+    "OS": 713,
+    "PREFIXO": "72010",
+    "DT_ABER": "16/Fev 12:56",
+    "DEFEITOS": " ",
+    "QTD": 20,
+    "QTDTT": 23
+  },
+  {
+    "SETOR": "MECï¿½NICA",
+    "OS": 1287,
+    "PREFIXO": "72001",
+    "DT_ABER": "19/Fev 14:22",
+    "DEFEITOS": " ",
+    "QTD": 20,
+    "QTDTT": 23
+  },
+  {
+    "SETOR": "MECï¿½NICA",
+    "OS": 1293,
+    "PREFIXO": "72007",
+    "DT_ABER": "19/Fev 14:22",
+    "DEFEITOS": " ",
+    "QTD": 20,
+    "QTDTT": 23
+  },
+  {
+    "SETOR": "MECï¿½NICA",
+    "OS": 1296,
+    "PREFIXO": "72010",
+    "DT_ABER": "19/Fev 14:22",
+    "DEFEITOS": " ",
+    "QTD": 20,
+    "QTDTT": 23
+  },
+  {
+    "SETOR": "MECï¿½NICA",
+    "OS": 1297,
+    "PREFIXO": "72001",
+    "DT_ABER": "19/Fev 14:42",
+    "DEFEITOS": " ",
+    "QTD": 20,
+    "QTDTT": 23
+  },
+  {
+    "SETOR": "MECï¿½NICA",
+    "OS": 1303,
+    "PREFIXO": "72007",
+    "DT_ABER": "19/Fev 14:42",
+    "DEFEITOS": " ",
+    "QTD": 20,
+    "QTDTT": 23
+  },
+  {
+    "SETOR": "MECï¿½NICA",
+    "OS": 1306,
+    "PREFIXO": "72010",
+    "DT_ABER": "19/Fev 14:42",
+    "DEFEITOS": " ",
+    "QTD": 20,
+    "QTDTT": 23
+  },
+  {
+    "SETOR": "MECï¿½NICA",
+    "OS": 1415,
+    "PREFIXO": "72011",
+    "DT_ABER": "24/Fev 15:51",
+    "DEFEITOS": " ",
+    "QTD": 20,
+    "QTDTT": 23
+  },
+  {
+    "SETOR": "MECï¿½NICA",
+    "OS": 2286,
+    "PREFIXO": "72038",
+    "DT_ABER": "30/Mar 13:48",
+    "DEFEITOS": " ",
+    "QTD": 20,
+    "QTDTT": 23
+  },
+  {
+    "SETOR": "MECï¿½NICA",
+    "OS": 2288,
+    "PREFIXO": "72042",
+    "DT_ABER": "30/Mar 13:53",
+    "DEFEITOS": " ",
+    "QTD": 20,
+    "QTDTT": 23
+  },
+  {
+    "SETOR": "MECï¿½NICA",
+    "OS": 2289,
+    "PREFIXO": "72039",
+    "DT_ABER": "30/Mar 13:54",
+    "DEFEITOS": " ",
+    "QTD": 20,
+    "QTDTT": 23
+  },
+  {
+    "SETOR": "MECï¿½NICA",
+    "OS": 2290,
+    "PREFIXO": "72052",
+    "DT_ABER": "30/Mar 13:55",
+    "DEFEITOS": " ",
+    "QTD": 20,
+    "QTDTT": 23
+  },
+  {
+    "SETOR": "MECï¿½NICA",
+    "OS": 2291,
+    "PREFIXO": "72032",
+    "DT_ABER": "30/Mar 13:55",
+    "DEFEITOS": " ",
+    "QTD": 20,
+    "QTDTT": 23
+  },
+  {
+    "SETOR": "MECï¿½NICA",
+    "OS": 2531,
+    "PREFIXO": "72053",
+    "DT_ABER": "07/Abr 08:40",
+    "DEFEITOS": " ",
+    "QTD": 20,
+    "QTDTT": 23
+  },
+  {
+    "SETOR": "MECï¿½NICA",
+    "OS": 2532,
+    "PREFIXO": "72051",
+    "DT_ABER": "07/Abr 08:42",
+    "DEFEITOS": " ",
+    "QTD": 20,
+    "QTDTT": 23
+  },
+  {
+    "SETOR": "MECï¿½NICA",
+    "OS": 2533,
+    "PREFIXO": "72036",
+    "DT_ABER": "07/Abr 08:43",
+    "DEFEITOS": " ",
+    "QTD": 20,
+    "QTDTT": 23
+  },
+  {
+    "SETOR": "MECï¿½NICA",
+    "OS": 2534,
+    "PREFIXO": "72058",
+    "DT_ABER": "07/Abr 08:44",
+    "DEFEITOS": " ",
+    "QTD": 20,
+    "QTDTT": 23
+  },
+  {
+    "SETOR": "MECï¿½NICA",
+    "OS": 2535,
+    "PREFIXO": "72040",
+    "DT_ABER": "07/Abr 08:44",
+    "DEFEITOS": " ",
+    "QTD": 20,
+    "QTDTT": 23
+  },
+  {
+    "SETOR": "TAPEï¿½ARIA/OUTROS",
+    "OS": 1584,
+    "PREFIXO": "72034",
+    "DT_ABER": "10/Fev 07:43",
+    "DEFEITOS": " ",
+    "QTD": 16,
+    "QTDTT": 23
+  },
+  {
+    "SETOR": "TAPEï¿½ARIA/OUTROS",
+    "OS": 1585,
+    "PREFIXO": "72035",
+    "DT_ABER": "10/Fev 07:44",
+    "DEFEITOS": " ",
+    "QTD": 16,
+    "QTDTT": 23
+  },
+  {
+    "SETOR": "TAPEï¿½ARIA/OUTROS",
+    "OS": 1297,
+    "PREFIXO": "72001",
+    "DT_ABER": "19/Fev 14:42",
+    "DEFEITOS": " ",
+    "QTD": 16,
+    "QTDTT": 23
+  },
+  {
+    "SETOR": "TAPEï¿½ARIA/OUTROS",
+    "OS": 1303,
+    "PREFIXO": "72007",
+    "DT_ABER": "19/Fev 14:42",
+    "DEFEITOS": " ",
+    "QTD": 16,
+    "QTDTT": 23
+  },
+  {
+    "SETOR": "TAPEï¿½ARIA/OUTROS",
+    "OS": 1306,
+    "PREFIXO": "72010",
+    "DT_ABER": "19/Fev 14:42",
+    "DEFEITOS": " ",
+    "QTD": 16,
+    "QTDTT": 23
+  },
+  {
+    "SETOR": "TAPEï¿½ARIA/OUTROS",
+    "OS": 1415,
+    "PREFIXO": "72011",
+    "DT_ABER": "24/Fev 15:51",
+    "DEFEITOS": " ",
+    "QTD": 16,
+    "QTDTT": 23
+  },
+  {
+    "SETOR": "TAPEï¿½ARIA/OUTROS",
+    "OS": 2286,
+    "PREFIXO": "72038",
+    "DT_ABER": "30/Mar 13:48",
+    "DEFEITOS": " ",
+    "QTD": 16,
+    "QTDTT": 23
+  },
+  {
+    "SETOR": "TAPEï¿½ARIA/OUTROS",
+    "OS": 2288,
+    "PREFIXO": "72042",
+    "DT_ABER": "30/Mar 13:53",
+    "DEFEITOS": " ",
+    "QTD": 16,
+    "QTDTT": 23
+  },
+  {
+    "SETOR": "TAPEï¿½ARIA/OUTROS",
+    "OS": 2289,
+    "PREFIXO": "72039",
+    "DT_ABER": "30/Mar 13:54",
+    "DEFEITOS": " ",
+    "QTD": 16,
+    "QTDTT": 23
+  },
+  {
+    "SETOR": "TAPEï¿½ARIA/OUTROS",
+    "OS": 2290,
+    "PREFIXO": "72052",
+    "DT_ABER": "30/Mar 13:55",
+    "DEFEITOS": " ",
+    "QTD": 16,
+    "QTDTT": 23
+  },
+  {
+    "SETOR": "TAPEï¿½ARIA/OUTROS",
+    "OS": 2291,
+    "PREFIXO": "72032",
+    "DT_ABER": "30/Mar 13:55",
+    "DEFEITOS": " ",
+    "QTD": 16,
+    "QTDTT": 23
+  },
+  {
+    "SETOR": "TAPEï¿½ARIA/OUTROS",
+    "OS": 2531,
+    "PREFIXO": "72053",
+    "DT_ABER": "07/Abr 08:40",
+    "DEFEITOS": " ",
+    "QTD": 16,
+    "QTDTT": 23
+  },
+  {
+    "SETOR": "TAPEï¿½ARIA/OUTROS",
+    "OS": 2532,
+    "PREFIXO": "72051",
+    "DT_ABER": "07/Abr 08:42",
+    "DEFEITOS": " ",
+    "QTD": 16,
+    "QTDTT": 23
+  },
+  {
+    "SETOR": "TAPEï¿½ARIA/OUTROS",
+    "OS": 2533,
+    "PREFIXO": "72036",
+    "DT_ABER": "07/Abr 08:43",
+    "DEFEITOS": " ",
+    "QTD": 16,
+    "QTDTT": 23
+  },
+  {
+    "SETOR": "TAPEï¿½ARIA/OUTROS",
+    "OS": 2534,
+    "PREFIXO": "72058",
+    "DT_ABER": "07/Abr 08:44",
+    "DEFEITOS": " ",
+    "QTD": 16,
+    "QTDTT": 23
+  },
+  {
+    "SETOR": "TAPEï¿½ARIA/OUTROS",
+    "OS": 2535,
+    "PREFIXO": "72040",
+    "DT_ABER": "07/Abr 08:44",
+    "DEFEITOS": " ",
+    "QTD": 16,
+    "QTDTT": 23
+  }
+]
