@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useLayoutEffect, useMemo, useState } from "react";
 import "./styles/global.css";
 import { v4 as uuid } from "uuid";
 
@@ -81,7 +81,7 @@ function App() {
       ret,
       tapo,
     };
-    console.log(orders);
+    // console.log(orders);
     setOrdersList(orders);
   };
 
@@ -89,14 +89,52 @@ function App() {
     getDataFilesArray();
   }, []);
 
-  // useEffect(() => {
-  //   setInterval(() => {
-  //     if (ordersList.elet.length >= 5) {
-  //       setElet((elet) => [...elet.slice(1), elet[0]]);
-  //       console.log("elet");
-  //     }
-  //   }, 3000);
-  // }, [elet.length]);
+  useMemo(() => {
+    setInterval(() => {
+      // setOrdersList(handleList());
+      console.log(handleList());
+    }, 1000);
+  }, [setOrdersList]);
+
+  function handleList() {
+    const borr = ordersList.borr;
+
+    console.log(borr);
+    const elet: IOrdersList[] = [
+      ...ordersList.elet.slice(1),
+      ordersList.elet[0],
+    ];
+    const fupi: IOrdersList[] = [
+      ...ordersList.fupi.slice(1),
+      ordersList.fupi[0],
+    ];
+    const lubr: IOrdersList[] = [
+      ...ordersList.lubr.slice(1),
+      ordersList.lubr[0],
+    ];
+    const meca: IOrdersList[] = [
+      ...ordersList.meca.slice(1),
+      ordersList.meca[0],
+    ];
+    const ret: IOrdersList[] = [...ordersList.ret.slice(1), ordersList.ret[0]];
+    const tapo: IOrdersList[] = [
+      ...ordersList.tapo.slice(1),
+      ordersList.tapo[0],
+    ];
+    // };
+
+    const orders = {
+      borr,
+      elet,
+      fupi,
+      lubr,
+      meca,
+      ret,
+      tapo,
+    };
+    console.log(orders);
+    return orders;
+  }
 
   return (
     <div className="App">
