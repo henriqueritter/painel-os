@@ -17,15 +17,15 @@ body {
   justify-content: space-around;
   /* justify-self: center;
   align-content: center; */
-  width: 100%;
-  height: 100%;
+  /* width: 100%;
+  height: 100%; */
 }
 /* header */
 .container-header {
   text-align: center;
   font-weight: 700;
-  font-size: 28px;
-  margin-bottom: 1%;
+  font-size: 2em;
+  margin-bottom: 0.2em;
 }
 
 .container-groups {
@@ -58,9 +58,9 @@ body {
 }
 
 .orders {
-  height: 12rem;
+  height: 11rem;
 
-  overflow: auto;
+  overflow: hidden;
   scroll-behavior: smooth;
 
   /* overscroll-behavior-y: contain;
