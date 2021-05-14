@@ -1,4 +1,4 @@
-import React, { useEffect, useLayoutEffect, useMemo, useState } from "react";
+import React, { useEffect, useState } from "react";
 import "./styles/global.css";
 import { v4 as uuid } from "uuid";
 
@@ -87,19 +87,29 @@ function App() {
 
   useEffect(() => {
     getDataFilesArray();
+
+    // setInterval(handleList, 3000);
   }, []);
 
-  useMemo(() => {
-    setInterval(() => {
-      // setOrdersList(handleList());
-      console.log(handleList());
-    }, 1000);
-  }, [setOrdersList]);
+  // useEffect(() => {
+  //   setInterval(() => handleList(), 1000);
+  // }, [ordersList]);
+
+  // useMemo(() => {
+  //   setInterval(() => {
+  //     // setOrdersList(handleList());
+  //     console.log(handleList());
+  //   }, 1000);
+  // }, [setOrdersList]);
 
   function handleList() {
-    const borr = ordersList.borr;
+    // function handleList = async() => {
+    console.log(ordersList);
+    const borr: IOrdersList[] = [
+      ...ordersList.borr.slice(1),
+      ordersList.borr[0],
+    ];
 
-    console.log(borr);
     const elet: IOrdersList[] = [
       ...ordersList.elet.slice(1),
       ordersList.elet[0],
@@ -132,8 +142,8 @@ function App() {
       ret,
       tapo,
     };
-    console.log(orders);
-    return orders;
+
+    setOrdersList(orders);
   }
 
   return (
@@ -148,7 +158,7 @@ function App() {
           <div className="container-content">
             <div className="container-orders" id="BOR">
               <p>Borracharia - Qtd: {ordersList.borr.length}</p>
-              <div className="orders">
+              <div onChange={handleList} className="orders">
                 {ordersList.borr.map((item) => {
                   return (
                     <ul key={uuid()}>
@@ -364,6 +374,7 @@ function App() {
             </div>
           </div>
         </div>
+        <button onClick={() => handleList()}>ASd</button>
       </div>
     </div>
   );
