@@ -1,0 +1,146 @@
+[
+  {
+    "SETOR": "ELÉTRICA",
+    "OS": 2656,
+    "PREFIXO": "1104",
+    "DT_ABER": "11/Abr 01:22",
+    "DEFEITOS": "DEFEITO",
+    "QTD": 16
+  },
+  {
+    "SETOR": "ELÉTRICA",
+    "OS": 2663,
+    "PREFIXO": "1104",
+    "DT_ABER": "11/Abr 07:22",
+    "DEFEITOS": "LANTERNA TRASEIRA",
+    "QTD": 16
+  },
+  {
+    "SETOR": "ELÉTRICA",
+    "OS": 2669,
+    "PREFIXO": "1104",
+    "DT_ABER": "11/Abr 10:55",
+    "DEFEITOS": "NÃO ACENDE",
+    "QTD": 16
+  },
+  {
+    "SETOR": "ELÉTRICA",
+    "OS": 2674,
+    "PREFIXO": "1104",
+    "DT_ABER": "11/Abr 15:11",
+    "DEFEITOS": "LANTERNA TRASEIRA",
+    "QTD": 16
+  },
+  {
+    "SETOR": "ELÉTRICA",
+    "OS": 2674,
+    "PREFIXO": "1104",
+    "DT_ABER": "11/Abr 15:11",
+    "DEFEITOS": "LANTERNA LATERAL",
+    "QTD": 16
+  },
+  {
+    "SETOR": "ELÉTRICA",
+    "OS": 2676,
+    "PREFIXO": "1104",
+    "DT_ABER": "11/Abr 20:20",
+    "DEFEITOS": "DEFEITO",
+    "QTD": 16
+  },
+  {
+    "SETOR": "ELÉTRICA",
+    "OS": 2677,
+    "PREFIXO": "1104",
+    "DT_ABER": "11/Abr 20:42",
+    "DEFEITOS": "FAROL QUEIMADO",
+    "QTD": 16
+  },
+  {
+    "SETOR": "ELÉTRICA",
+    "OS": 2678,
+    "PREFIXO": "1104",
+    "DT_ABER": "11/Abr 21:29",
+    "DEFEITOS": "LANTERNA TRASEIRA",
+    "QTD": 16
+  },
+  {
+    "SETOR": "ELÉTRICA",
+    "OS": 2682,
+    "PREFIXO": "1104",
+    "DT_ABER": "11/Abr 23:32",
+    "DEFEITOS": "LANTERNA TRASEIRA",
+    "QTD": 16
+  },
+  {
+    "SETOR": "ELÉTRICA",
+    "OS": 2682,
+    "PREFIXO": "1104",
+    "DT_ABER": "11/Abr 23:32",
+    "DEFEITOS": "AR CONDICIONADO",
+    "QTD": 16
+  },
+  {
+    "SETOR": "ELÉTRICA",
+    "OS": 2686,
+    "PREFIXO": "1104",
+    "DT_ABER": "12/Abr 01:52",
+    "DEFEITOS": "DEFEITO",
+    "QTD": 16
+  },
+  {
+    "SETOR": "ELÉTRICA",
+    "OS": 2693,
+    "PREFIXO": "1104",
+    "DT_ABER": "12/Abr 06:26",
+    "DEFEITOS": "SETA",
+    "QTD": 16
+  },
+  {
+    "SETOR": "ELÉTRICA",
+    "OS": 2694,
+    "PREFIXO": "1104",
+    "DT_ABER": "12/Abr 09:24",
+    "DEFEITOS": "DEFEITO",
+    "QTD": 16
+  },
+  {
+    "SETOR": "ELÉTRICA",
+    "OS": 2695,
+    "PREFIXO": "1104",
+    "DT_ABER": "12/Abr 09:57",
+    "DEFEITOS": "PALHETAS LIMPADOR",
+    "QTD": 16
+  },
+  {
+    "SETOR": "ELÉTRICA",
+    "OS": 2697,
+    "PREFIXO": "1104",
+    "DT_ABER": "12/Abr 12:28",
+    "DEFEITOS": "DEFEITO",
+    "QTD": 16
+  },
+  {
+    "SETOR": "ELÉTRICA",
+    "OS": 2699,
+    "PREFIXO": "1104",
+    "DT_ABER": "12/Abr 12:50",
+    "DEFEITOS": "DEFEITO",
+    "QTD": 16
+  },
+  {
+    "SETOR": "ELÉTRICA",
+    "OS": 2700,
+    "PREFIXO": "1104",
+    "DT_ABER": "12/Abr 15:05",
+    "DEFEITOS": "FAROL QUEIMADO",
+    "QTD": 16
+  },
+  {
+    "SETOR": "ELÉTRICA",
+    "OS": 2704,
+    "PREFIXO": "1104",
+    "DT_ABER": "12/Abr 15:53",
+    "DEFEITOS": "DEFEITO",
+    "QTD": 16
+  }
+]
