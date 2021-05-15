@@ -10,10 +10,12 @@ Aplicação React com o propósito de exibir as ordens de serviço em abertas da
 
 ## TO-DO
 
-[x]Leitura dos arquivos JSON da parte de preventivas.
-[x]Rolagem automática do conteúdo de dentro de cada Div.
-[ ]Erro ao não receber/encontrar JSON.
-[ ]Erro ao receber JSON Vazio.
+<br/>[x] Leitura dos arquivos JSON da parte de preventivas.
+<br/>[x] Rolagem automática do conteúdo de dentro de cada Div.
+<br/>[x] Erro ao não receber/encontrar JSON.
+<br/>[x] Erro ao receber JSON Vazio.
+<br/>[ ] Alterar caminho dos JSON.
+<br/>[ ] Dividir codigo.
 
 ## Licença
 
