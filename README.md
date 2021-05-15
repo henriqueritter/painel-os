@@ -13,7 +13,7 @@ Aplicação React com o propósito de exibir as ordens de serviço em abertas da
 ![Layout Figma](https://www.figma.com/file/BxV0jIRiJfUATc3wo9hSDT/Painel-OS-TTB?node-id=0%3A1)
 
 ## Netlify Preview
-Um exemplo do painel em funcionamento está disponível no <a href="https://example-painel-os.netlify.app/">Netlify</a> 
+Um exemplo do painel em funcionamento está disponível no <a href="https://example-painel-os.netlify.app/">Netlify</a>.
 
 ## TO-DO
 
