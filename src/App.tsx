@@ -59,104 +59,105 @@ function App() {
   };
 
   // set each Json file data to a state const.
-  const getDataFilesArray = async () => {
-    // fetch all JSON Files to create a object orders
-    const borr: IOrdersList[] = await fetch("BORR.JSON", {})
-      .then(parseJson)
-      .then((result) => {
-        return result;
-      });
-    const elet: IOrdersList[] = await fetch("ELET.JSON", {})
-      .then(parseJson)
-      .then((result) => {
-        return result;
-      });
-    const fupi: IOrdersList[] = await fetch("FUPI.JSON", {})
-      .then(parseJson)
-      .then((result) => {
-        return result;
-      });
-    const lubr: IOrdersList[] = await fetch("LUBR.JSON", {})
-      .then(parseJson)
-      .then((result) => {
-        return result;
-      });
-    const meca: IOrdersList[] = await fetch("MECA.JSON", {})
-      .then(parseJson)
-      .then((result) => {
-        return result;
-      });
-    const ret: IOrdersList[] = await fetch("RET.JSON", {})
-      .then(parseJson)
-      .then((result) => {
-        return result;
-      });
-    const tapo: IOrdersList[] = await fetch("TAPO.JSON", {})
-      .then(parseJson)
-      .then((result) => {
-        return result;
-      });
-
-    // Orders de serviço Preventivas
-    const pborr: IOrdersList[] = await fetch("PBORR.JSON", {})
-      .then(parseJson)
-      .then((result) => {
-        return result;
-      });
-    const pelet: IOrdersList[] = await fetch("PELET.JSON", {})
-      .then(parseJson)
-      .then((result) => {
-        return result;
-      });
-    const pfupi: IOrdersList[] = await fetch("PFUPI.JSON", {})
-      .then(parseJson)
-      .then((result) => {
-        return result;
-      });
-    const plubr: IOrdersList[] = await fetch("PLUBR.JSON", {})
-      .then(parseJson)
-      .then((result) => {
-        return result;
-      });
-    const pmeca: IOrdersList[] = await fetch("PMECA.JSON", {})
-      .then(parseJson)
-      .then((result) => {
-        return result;
-      });
-    const pret: IOrdersList[] = await fetch("PRET.JSON", {})
-      .then(parseJson)
-      .then((result) => {
-        return result;
-      });
-    const ptapo: IOrdersList[] = await fetch("PTAPO.JSON", {})
-      .then(parseJson)
-      .then((result) => {
-        return result;
-      });
-
-    //object orders, used to set a state
-    const orders = {
-      borr,
-      elet,
-      fupi,
-      lubr,
-      meca,
-      ret,
-      tapo,
-      pborr,
-      pelet,
-      pfupi,
-      plubr,
-      pmeca,
-      pret,
-      ptapo,
-    };
-
-    setOrdersList(orders);
-  };
 
   // call function to load data from JSON Files
   useEffect(() => {
+    // async function to collect all orders data
+    const getDataFilesArray = async () => {
+      // fetch all JSON Files to create a object orders
+      const borr: IOrdersList[] = await fetch("BORR.JSON", {})
+        .then(parseJson)
+        .then((result) => {
+          return result;
+        });
+      const elet: IOrdersList[] = await fetch("ELET.JSON", {})
+        .then(parseJson)
+        .then((result) => {
+          return result;
+        });
+      const fupi: IOrdersList[] = await fetch("FUPI.JSON", {})
+        .then(parseJson)
+        .then((result) => {
+          return result;
+        });
+      const lubr: IOrdersList[] = await fetch("LUBR.JSON", {})
+        .then(parseJson)
+        .then((result) => {
+          return result;
+        });
+      const meca: IOrdersList[] = await fetch("MECA.JSON", {})
+        .then(parseJson)
+        .then((result) => {
+          return result;
+        });
+      const ret: IOrdersList[] = await fetch("RET.JSON", {})
+        .then(parseJson)
+        .then((result) => {
+          return result;
+        });
+      const tapo: IOrdersList[] = await fetch("TAPO.JSON", {})
+        .then(parseJson)
+        .then((result) => {
+          return result;
+        });
+
+      // Orders de serviço Preventivas
+      const pborr: IOrdersList[] = await fetch("PBORR.JSON", {})
+        .then(parseJson)
+        .then((result) => {
+          return result;
+        });
+      const pelet: IOrdersList[] = await fetch("PELET.JSON", {})
+        .then(parseJson)
+        .then((result) => {
+          return result;
+        });
+      const pfupi: IOrdersList[] = await fetch("PFUPI.JSON", {})
+        .then(parseJson)
+        .then((result) => {
+          return result;
+        });
+      const plubr: IOrdersList[] = await fetch("PLUBR.JSON", {})
+        .then(parseJson)
+        .then((result) => {
+          return result;
+        });
+      const pmeca: IOrdersList[] = await fetch("PMECA.JSON", {})
+        .then(parseJson)
+        .then((result) => {
+          return result;
+        });
+      const pret: IOrdersList[] = await fetch("PRET.JSON", {})
+        .then(parseJson)
+        .then((result) => {
+          return result;
+        });
+      const ptapo: IOrdersList[] = await fetch("PTAPO.JSON", {})
+        .then(parseJson)
+        .then((result) => {
+          return result;
+        });
+
+      //object orders, used to set a state
+      const orders = {
+        borr,
+        elet,
+        fupi,
+        lubr,
+        meca,
+        ret,
+        tapo,
+        pborr,
+        pelet,
+        pfupi,
+        plubr,
+        pmeca,
+        pret,
+        ptapo,
+      };
+
+      setOrdersList(orders);
+    };
     getDataFilesArray();
   }, []);
 
