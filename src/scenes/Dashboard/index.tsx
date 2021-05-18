@@ -3,13 +3,18 @@ import { ServiceOrderNatureSegment } from "../../components/ServiceOrderNatureSe
 import { useDashboard } from "../../context/Dashboard";
 
 export const Dashboard: React.FC = () => {
-
   const { allServiceOrders } = useDashboard();
 
   return (
     <div className="container">
-      <ServiceOrderNatureSegment orders={allServiceOrders.corretiva} />
-      <ServiceOrderNatureSegment orders={allServiceOrders.preventiva} />
+      <ServiceOrderNatureSegment
+        orders={allServiceOrders.corretiva}
+        orderNatureSegment="Corretiva"
+      />
+      <ServiceOrderNatureSegment
+        orders={allServiceOrders.preventiva}
+        orderNatureSegment="Preventiva"
+      />
     </div>
-  )
-}
+  );
+};
