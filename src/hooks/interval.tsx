@@ -3,7 +3,7 @@ import { useRef, useEffect } from "react";
 // Hook Created by Dan Abramov, available on
 // https://overreacted.io/making-setinterval-declarative-with-react-hooks/
 function useInterval(callback: any, delay: number) {
-  const savedCallback = useRef();
+  const savedCallback = useRef<any>();
 
   // Remember the latest callback.
   useEffect(() => {
@@ -13,7 +13,6 @@ function useInterval(callback: any, delay: number) {
   // Set up the interval.
   useEffect(() => {
     function tick() {
-      // @ts-expect-error
       savedCallback.current();
     }
     if (delay !== null) {
