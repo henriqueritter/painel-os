@@ -4,7 +4,7 @@
     "OS": 2660,
     "PREFIXO": "1104",
     "DT_ABER": "11/Abr 06:12",
-    "DEFEITOS": "PNEU MUCHO",
+    "DEFEITOS": "PNEU MURCHO",
     "QTD": 9
   },
   {
@@ -60,7 +60,7 @@
     "OS": 2699,
     "PREFIXO": "1104",
     "DT_ABER": "12/Abr 12:50",
-    "DEFEITOS": "PNEU MUCHO",
+    "DEFEITOS": "PNEU MURCHO",
     "QTD": 9
   },
   {
@@ -68,7 +68,15 @@
     "OS": 2700,
     "PREFIXO": "1104",
     "DT_ABER": "12/Abr 15:05",
-    "DEFEITOS": "PNEU MUCHO",
+    "DEFEITOS": "PNEU MURCHO",
+    "QTD": 9
+  },
+  {
+    "SETOR": "BORRACHARIA",
+    "OS": 2701,
+    "PREFIXO": "1105",
+    "DT_ABER": "13/Abr 11:11",
+    "DEFEITOS": "PNEU VAZIO",
     "QTD": 9
   }
 ]

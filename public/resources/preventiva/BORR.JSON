@@ -1,19 +1,18 @@
 [
   {
-    "SETOR": "FUNIL/PINT",
-    "OS": 2655,
-    "PREFIXO": "1104",
-    "DT_ABER": "11/Abr 01:22",
-    "DEFEITOS": "TAMPA PORTA MALAS",
-    "QTD": 15
+    "SETOR": "BORRACHARIA",
+    "OS": 2650,
+    "PREFIXO": "2104",
+    "DT_ABER": "09/Abr 01:12",
+    "DEFEITOS": "PNEU FURADO",
+    "QTD": 9
   },
-
   {
-    "SETOR": "FUNIL/PINT",
-    "OS": 26601,
-    "PREFIXO": "1104",
-    "DT_ABER": "11/Abr 06:12",
-    "DEFEITOS": "SOLDAR A TAMPA",
-    "QTD": 12
+    "SETOR": "BORRACHARIA",
+    "OS": 2670,
+    "PREFIXO": "2104",
+    "DT_ABER": "22/Mai 16:43",
+    "DEFEITOS": "PNEU COM DESGASTE",
+    "QTD": 9
   }
 ]

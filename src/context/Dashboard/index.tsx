@@ -44,19 +44,22 @@ export const DashboardProvider: React.FC = ({ children }) => {
     INITIAL_STATE.allServiceOrders
   );
 
+  const orderNatures: ServiceOrderNature[] = ["corretiva", "preventiva"];
+  const orderTypes: ServiceOrderType[] = [
+    "BORR",
+    "ELET",
+    "FUPI",
+    "LUBR",
+    "MECA",
+    "RET",
+    "TAPO",
+  ];
+
   // Function to fetch all the orders
+
   const loadOrders = React.useCallback(async () => {
     const ordersToLoad: Orders = { ...INITIAL_STATE.allServiceOrders };
-    const orderNatures: ServiceOrderNature[] = ["corretiva", "preventiva"];
-    const orderTypes: ServiceOrderType[] = [
-      "BORR",
-      "ELET",
-      "FUPI",
-      "LUBR",
-      "MECA",
-      "RET",
-      "TAPO",
-    ];
+
     for (const orderNature of orderNatures) {
       for (const orderType of orderTypes) {
         const response = await fetch(
@@ -69,14 +72,35 @@ export const DashboardProvider: React.FC = ({ children }) => {
     setOrders(ordersToLoad);
   }, [setOrders]);
 
+  // function used to change the position of every order where orderType has more than 10 elements
+  function handleList() {
+    const parsedOrders: Orders = { ...INITIAL_STATE.allServiceOrders };
+
+    for (const orderNature of orderNatures) {
+      for (const orderType of orderTypes) {
+        const parsedOrderType =
+          orders[orderNature][orderType].length >= 10
+            ? [
+                ...orders[orderNature][orderType].slice(1),
+                orders[orderNature][orderType][0],
+              ]
+            : orders[orderNature][orderType];
+
+        parsedOrders[orderNature][orderType] = parsedOrderType;
+      }
+    }
+    setOrders(parsedOrders);
+  }
+
   // Will run once, and initialize the orders
   React.useEffect(() => {
     loadOrders();
   }, [loadOrders]);
 
+  // custom hook, will run in a loop after every 2seconds, used to scroll the orders of the card.
   useInterval(() => {
-    console.log("Insert scroll function here");
-  }, 1000);
+    handleList();
+  }, 3000);
 
   return (
     <DashboardContext.Provider
